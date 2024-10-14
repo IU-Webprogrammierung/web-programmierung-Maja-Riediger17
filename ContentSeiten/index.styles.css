@@ -1,7 +1,49 @@
 
-h1 {
+h1 { /*Überschrift oben*/
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
     font-size: 3rem;
-    color: #2c3e50;
+    color: #2e5983;
+    margin-bottom:4px
 }
 
+p1 { /*Unterüberschrift*/
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    font-size: 1.5rem;
+    color: #2e5983;
+}
+
+a { /* Links im Header*/
+    color: #2e5983;
+    font-size: 1.2rem;
+    padding: 5px 10px; 
+    margin-right: 20px; 
+}
+
+a:hover, /*Links im Header*/
+a:focus {
+  color:  rgb(118, 181, 245);
+}
+
+.search-bar { /*Suchleiste Grunddesign*/
+    width: 200px;              /* Breite */
+    padding: 5px 10px;         /* Abstand zwischen Text und Rand*/
+    border: 2px solid #2e5983; /* Rahmenfarbe und -breite */
+    border-radius: 15px;       /* Abgerundete Ecken */
+    font-size: 12px;           /* Schriftgröße */
+    outline: none;     
+        }      
+   
+.search-bar:hover {
+    border-color: rgb(118, 181, 245);  
+}
+
+.search-bar:focus {
+    border-color: #1abc9c;     
+}
+
+/* Zentrierung der Suchleiste */
+form {
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+}
