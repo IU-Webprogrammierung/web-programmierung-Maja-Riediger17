@@ -70,7 +70,7 @@ a:focus {
   color:  rgb(118, 181, 245);
 }
 
-section {
+section , article{
     font-family: 'Open Sans', sans-serif;
     font-size: 18px; /* Angenehme Schriftgröße */
     line-height: 1.8; /* Großzügiger Zeilenabstand für bessere Lesbarkeit */
@@ -146,4 +146,25 @@ tr:hover {
 /* Letzte Zeile ohne unteren Rand */
 tr:last-child td {
     border-bottom: none; /* Entfernt die untere Grenze der letzten Zeile */
+}
+
+
+article ul, ol{
+    padding: 0; /* Entfernt Padding */
+    margin: 20px 0; /* Abstand um die Liste */
+}
+
+
+article li {
+    background-color: #ffffff; /* Hintergrundfarbe für die Listenelemente */
+    padding: 15px; /* Innenabstand */
+    margin-bottom: 10px; /* Abstand zwischen den Listenelementen */
+    border-radius: 5px; /* Abgerundete Ecken */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Schatten für Tiefe */
+    transition: background-color 0.3s; /* Sanfter Übergang für Hover */
+}
+
+/* Hover-Effekt für Listenelemente */
+article li:hover {
+    background-color: #e7f3fe; /* Hintergrundfarbe beim Hover */
 }
