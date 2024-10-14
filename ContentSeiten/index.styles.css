@@ -12,15 +12,15 @@ p1 { /*Unterüberschrift*/
     color: #2e5983;
 }
 
-a { /* Links im Header*/
+ul li a { /* Links im Header*/
     color: #2e5983;
     font-size: 1.2rem;
     padding: 5px 10px; 
     margin-right: 20px; 
 }
 
-a:hover, /*Links im Header*/
-a:focus {
+ul li a:hover, /*Links im Header*/
+ul li a:focus {
   color:  rgb(118, 181, 245);
 }
 
@@ -46,4 +46,37 @@ form {
     display: flex;
     justify-content: right;
     margin-top: 10px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px; /* Angenehme Schriftgröße */
+    line-height: 1.8; /* Großzügiger Zeilenabstand für bessere Lesbarkeit */
+    color: #333; /* Dunkles Grau für Text */
+    background-color: #f7f7f7; /* Heller Hintergrund */
+    margin: 0;
+    padding: 40px;
+    background: #ddfaff;
+}
+
+a {
+    color: #2e5983;
+    padding: 5px 10px; 
+    margin-right: 20px; 
+}
+
+a:hover, /*Link zur Hyrox-Dateilseite*/
+a:focus {
+  color:  rgb(118, 181, 245);
+}
+
+section {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px; /* Angenehme Schriftgröße */
+    line-height: 1.8; /* Großzügiger Zeilenabstand für bessere Lesbarkeit */
+    color: #333; /* Dunkles Grau für Text */
+    background-color: #f7f7f7; /* Heller Hintergrund */
+    margin: 0;
+    padding: 40px;
+    background: linear-gradient(135deg, #ddfaff, #adfaec); /* Blau zu Lila Verlauf */
 }
