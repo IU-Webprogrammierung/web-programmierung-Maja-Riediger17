@@ -12,19 +12,19 @@ p1 { /*Unterüberschrift*/
     color: #2e5983;
 }
 
-ul li a { /* Links im Header*/
+nav ul li a { /* Links im Header*/
     color: #2e5983;
     font-size: 1.2rem;
     padding: 5px 10px; 
     margin-right: 20px; 
 }
 
-ul li a:hover, /*Links im Header*/
-ul li a:focus {
+nav ul li a:hover, /*Links im Header*/
+nav ul li a:focus {
   color:  rgb(118, 181, 245);
 }
 
-.search-bar { /*Suchleiste Grunddesign*/
+.search-bar { /*Suchleiste Design*/
     width: 200px;              /* Breite */
     padding: 5px 10px;         /* Abstand zwischen Text und Rand*/
     border: 2px solid #2e5983; /* Rahmenfarbe und -breite */
@@ -50,9 +50,9 @@ form {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px; /* Angenehme Schriftgröße */
-    line-height: 1.8; /* Großzügiger Zeilenabstand für bessere Lesbarkeit */
-    color: #333; /* Dunkles Grau für Text */
+    font-size: 18px; /*Schriftgröße */
+    line-height: 1.8; /* Zeilenabstand */
+    color: #333; /* Textfarbe */
     margin: 0;
     padding: 40px;
 }
@@ -68,18 +68,33 @@ a:focus {
   color:  rgb(118, 181, 245);
 }
 
-section , article {
+#bild1 {
+    width: auto;
+    height: 300px;
+}
+
+#bild4 {
+    width: 500px;
+    height: auto;
+}
+
+#bild2 {
+    width: 500px;
+    height: auto;
+}
+
+article {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px; /* Angenehme Schriftgröße */
-    line-height: 1.8; /* Großzügiger Zeilenabstand für bessere Lesbarkeit */
-    color: #333; /* Dunkles Grau für Text */
+    font-size: 18px; 
+    line-height: 1.8; 
+    color: #333; /
     margin: 0;
     padding: 40px;
     }
 
 table {
     width: 100%; /* Breite der Tabelle */
-    border-collapse: collapse; /* Entfernt Abstände zwischen Zellen */
+    border-collapse: collapse; /* Abstände zwischen Zellen entfernt */
     margin: 20px; /* Abstand um die Tabelle */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Schatten für Tiefe */
     border-radius: 8px; /* Abgerundete Ecken */
@@ -88,63 +103,30 @@ table {
 
 /* Tabellenkopf Styling */
 th {
-    color: white; /* Schriftfarbe für den Kopf */
-    padding: 12px; /* Innenabstand für Kopfzellen */
+    background-color: #3498db; /* Hintergrundfarbe für den Kopf */
+    color: white; /* Schriftfarbe Kopf */
+    padding: 12px; /* Innenabstand Kopfzellen */
     text-align: left; /* Text linksbündig */
 }
 
 /* Tabellenzellen Styling */
 td {
-    background-color: #ffffff; /* Hintergrundfarbe für die Zellen */
-    padding: 10px; /* Innenabstand für Zellen */
+    background-color: #ffffff; /* Hintergrundfarbe */
+    padding: 10px; /* Innenabstand */
     border-bottom: 1px solid #dddddd; /* Untere Grenze der Zellen */
 }
 
 /* Hover-Effekt für Zellen */
 tr:hover {
-    background-color: #f1f1f1; /* Hintergrundfarbe beim Hover */
+    background-color: #f1f1f1; 
 }
 
 /* Letzte Zeile ohne unteren Rand */
 tr:last-child td {
-    border-bottom: none; /* Entfernt die untere Grenze der letzten Zeile */
+    border-bottom: none; 
 }
 
-table {
-    width: 100%; /* Breite der Tabelle */
-    border-collapse: collapse; /* Entfernt Abstände zwischen Zellen */
-    margin: 20px 0; /* Abstand um die Tabelle */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Schatten für Tiefe */
-    border-radius: 8px; /* Abgerundete Ecken */
-    overflow: hidden; /* Versteckt Überlauf */
-}
-
-/* Tabellenkopf Styling */
-th {
-    background-color: #2e5983; /* Hintergrundfarbe für den Kopf */
-    color: white; /* Schriftfarbe für den Kopf */
-    padding: 12px; /* Innenabstand für Kopfzellen */
-    text-align: left; /* Text linksbündig */
-}
-
-/* Tabellenzellen Styling */
-td {
-    background-color: #ffffff; /* Hintergrundfarbe für die Zellen */
-    padding: 10px; /* Innenabstand für Zellen */
-    border-bottom: 1px solid #dddddd; /* Untere Grenze der Zellen */
-}
-
-/* Hover-Effekt für Zellen */
-tr:hover {
-    background-color: #f1f1f1; /* Hintergrundfarbe beim Hover */
-}
-
-/* Letzte Zeile ohne unteren Rand */
-tr:last-child td {
-    border-bottom: none; /* Entfernt die untere Grenze der letzten Zeile */
-}
-
-
+/*Listen formatierung */
 article ul, ol{
     padding: 0; /* Entfernt Padding */
     margin: 20px 0; /* Abstand um die Liste */
@@ -165,22 +147,55 @@ article li:hover {
     background-color: #e7f3fe; /* Hintergrundfarbe beim Hover */
 }
 
+.horizontal-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Listenelemente horizontal */
+.horizontal-menu li {
+    display: inline-block;
+    margin-right: 20px; /* Abstand zwischen den Links */
+}
+
+.flex-container {
+    display: flex; /* Flexbox aktivieren */
+    justify-content: space-between; /* Verteilung des Inhalts */
+    align-items: start; /* Vertikale Zentrierung */
+    height: 80vh; /* Höhe des Viewports */
+    background-color: #f0f0f0; /* Hintergrundfarbe */
+    padding: 20px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    gap: 20px;
+}
 
 .flex-container1 {
     display: flex; /* Flexbox aktivieren */
-    flex-direction: row;
     justify-content: space-between; /* Verteilung des Inhalts */
-    align-items: stretch; /* Vertikale Zentrierung */
-    height: 20vh; /* Höhe des Viewports */
-    background-color: #c31515; /* Hintergrundfarbe */
+    align-items: center; /* Vertikale Zentrierung */
+    height: 100vh; /* Höhe des Viewports */
+    background-color: #f0f0f0; /* Hintergrundfarbe */
     padding: 20px;
     box-sizing: border-box;
+    gap: 20px; 
 }
 
-
-  .flex-container > div {
-    background-color: #f1f1f1;
+.flex-container2, .flex-container3, .flex-container4 {
+    display: flex; /* Flexbox aktivieren */
+    justify-content: space-between; /* Verteilung des Inhalts */
+    align-items: center; /* Vertikale Zentrierung */
+    height: 100vh; /* Höhe des Viewports */
+    background-color: #f0f0f0; /* Hintergrundfarbe */
     padding: 20px;
-    font-size: 30px;
-    width: 100%
-  }
+    box-sizing: border-box;
+    gap: 20px; 
+}
+
+@media (max-width: 768px) {
+    .flex-container1, .flex-container2, .flex-container3, .flex-container4 {
+        flex-direction: column; /* Stapelt die Elemente untereinander */
+        height: auto; /* Höhe automatisch */
+    }
+}
