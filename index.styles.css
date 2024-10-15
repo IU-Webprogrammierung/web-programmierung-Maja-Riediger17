@@ -30,7 +30,7 @@ ul li a:focus {
     border: 2px solid #2e5983; /* Rahmenfarbe und -breite */
     border-radius: 15px;       /* Abgerundete Ecken */
     font-size: 12px;           /* Schriftgröße */
-    outline: none;     
+    outline: none;    
         }      
    
 .search-bar:hover {
@@ -53,10 +53,8 @@ body {
     font-size: 18px; /* Angenehme Schriftgröße */
     line-height: 1.8; /* Großzügiger Zeilenabstand für bessere Lesbarkeit */
     color: #333; /* Dunkles Grau für Text */
-    background-color: #f7f7f7; /* Heller Hintergrund */
     margin: 0;
     padding: 40px;
-    background: #ddfaff;
 }
 
 a {
@@ -70,12 +68,11 @@ a:focus {
   color:  rgb(118, 181, 245);
 }
 
-section , article{
+section , article {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px; /* Angenehme Schriftgröße */
     line-height: 1.8; /* Großzügiger Zeilenabstand für bessere Lesbarkeit */
     color: #333; /* Dunkles Grau für Text */
-    background-color: #f7f7f7; /* Heller Hintergrund */
     margin: 0;
     padding: 40px;
     }
@@ -83,7 +80,7 @@ section , article{
 table {
     width: 100%; /* Breite der Tabelle */
     border-collapse: collapse; /* Entfernt Abstände zwischen Zellen */
-    margin: 20px 0; /* Abstand um die Tabelle */
+    margin: 20px; /* Abstand um die Tabelle */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Schatten für Tiefe */
     border-radius: 8px; /* Abgerundete Ecken */
     overflow: hidden; /* Versteckt Überlauf */
@@ -91,7 +88,6 @@ table {
 
 /* Tabellenkopf Styling */
 th {
-    background-color: #3498db; /* Hintergrundfarbe für den Kopf */
     color: white; /* Schriftfarbe für den Kopf */
     padding: 12px; /* Innenabstand für Kopfzellen */
     text-align: left; /* Text linksbündig */
@@ -168,3 +164,23 @@ article li {
 article li:hover {
     background-color: #e7f3fe; /* Hintergrundfarbe beim Hover */
 }
+
+
+.flex-container1 {
+    display: flex; /* Flexbox aktivieren */
+    flex-direction: row;
+    justify-content: space-between; /* Verteilung des Inhalts */
+    align-items: stretch; /* Vertikale Zentrierung */
+    height: 20vh; /* Höhe des Viewports */
+    background-color: #c31515; /* Hintergrundfarbe */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+  .flex-container > div {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-size: 30px;
+    width: 100%
+  }
