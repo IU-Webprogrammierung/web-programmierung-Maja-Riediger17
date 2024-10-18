@@ -96,6 +96,10 @@ a:focus {
     height: auto;
 }
 
+.underline {
+    text-decoration: underline solid #2e5983;; /* Unterstreicht die Überschriften */
+}
+
 article {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px; 
@@ -214,9 +218,10 @@ article li:hover {
     display: flex; /* Flexbox aktivieren */
     justify-content: space-around; /* Verteilung des Inhalts */
     align-items: start; /* Vertikale Zentrierung */
-    height: 100vh; /* Höhe des Viewports */
+    height: 95vh; /* Höhe des Viewports */
     background: linear-gradient(to bottom right , #e9f1f4, #59b2d2);
-    padding: 20px;
+    border-radius: 15px; 
+    padding: 5px 10px 5px 10px;
     margin-top: 30px;
     box-sizing: border-box;
     gap: 20px;
@@ -239,6 +244,10 @@ article li:hover {
 
 .table {
     overflow: hidden;              /* Verhindert, dass die Tabelle den festgelegten Bereich verlässt */
+}
+
+tbody td:first-child {
+    font-weight: bold;         /* Erste Spalte fett formatieren */
 }
 
 /*Flexbox für den Footer*/
