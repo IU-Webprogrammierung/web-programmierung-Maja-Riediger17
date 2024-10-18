@@ -12,6 +12,11 @@ p1 { /*Unterüberschrift*/
     color: #03080c;
 }
 
+/*Überschrift in Flexbox*/
+.container {
+    text-align: center;  /* Zentriert den Text horizontal */
+}
+
 nav ul li a { /* Links im Header*/
     color: #0f6686;
     font-size: 1.2rem;
@@ -48,6 +53,14 @@ form {
     margin-top: 10px;
 }
 
+/*Flexbox für das Menü*/
+.flex-container5 {
+    display: flex; /* Flexbox aktivieren */
+    justify-content: center; /* Verteilung des Inhalts */
+    align-items: center; /* Vertikale Zentrierung */
+    gap: 10px;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px; /*Schriftgröße */
@@ -63,7 +76,7 @@ a {
     margin-right: 20px; 
 }
 
-a:hover, /*Link zur Hyrox-Dateilseite*/
+a:hover, /*Links ändern die Farbe wenn die Maus darüber fährt*/
 a:focus {
   color:  rgb(118, 181, 245);
 }
@@ -92,39 +105,39 @@ article {
     padding: 40px;
     }
 
-table {
-    width: 100%; /* Breite der Tabelle */
-    border-collapse: collapse; /* Abstände zwischen Zellen entfernt */
-    margin: 20px; /* Abstand um die Tabelle */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Schatten für Tiefe */
-    border-radius: 8px; /* Abgerundete Ecken */
-    overflow: hidden; /* Versteckt Überlauf */
-}
-
-/* Tabellenkopf Styling */
-th {
-    background-color: #3498db; /* Hintergrundfarbe für den Kopf */
-    color: white; /* Schriftfarbe Kopf */
-    padding: 12px; /* Innenabstand Kopfzellen */
-    text-align: left; /* Text linksbündig */
-}
-
-/* Tabellenzellen Styling */
-td {
-    background-color: #ffffff; /* Hintergrundfarbe */
-    padding: 10px; /* Innenabstand */
-    border-bottom: 1px solid #dddddd; /* Untere Grenze der Zellen */
-}
-
-/* Hover-Effekt für Zellen */
-tr:hover {
-    background-color: #f1f1f1; 
-}
-
-/* Letzte Zeile ohne unteren Rand */
-tr:last-child td {
-    border-bottom: none; 
-}
+    table {
+        width: 100%; /* Breite der Tabelle */
+        border-collapse: collapse; /* Abstände zwischen Zellen entfernt */
+        margin: 20px; /* Abstand um die Tabelle */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Schatten für Tiefe */
+        border-radius: 8px; /* Abgerundete Ecken */
+        overflow: hidden; /* Versteckt Überlauf */
+    }
+    
+    /* Tabellenkopf Styling */
+    th {
+        background-color: #3498db; /* Hintergrundfarbe für den Kopf */
+        color: white; /* Schriftfarbe Kopf */
+        padding: 12px; /* Innenabstand Kopfzellen */
+        text-align: left; /* Text linksbündig */
+    }
+    
+    /* Tabellenzellen Styling */
+    td {
+        background-color: #ffffff; /* Hintergrundfarbe */
+        padding: 10px; /* Innenabstand */
+        border-bottom: 1px solid #dddddd; /* Untere Grenze der Zellen */
+    }
+    
+    /* Hover-Effekt für Zellen */
+    tr:hover {
+        background-color: #f1f1f1; 
+    }
+    
+    /* Letzte Zeile ohne unteren Rand */
+    tr:last-child td {
+        border-bottom: none; 
+    }
 
 /*Listen formatierung */
 article ul, ol{
@@ -134,7 +147,7 @@ article ul, ol{
 
 
 article li {
-    background-color: #ffffff; /* Hintergrundfarbe für die Listenelemente */
+    background-color:  #ffffff; /* Hintergrundfarbe für die Listenelemente */
     padding: 15px; /* Innenabstand */
     margin-bottom: 10px; /* Abstand zwischen den Listenelementen */
     border-radius: 5px; /* Abgerundete Ecken */
@@ -159,6 +172,7 @@ article li:hover {
     margin-right: 20px; /* Abstand zwischen den Links */
 }
 
+/*Seitenanfang*/
 .flex-container {
     display: flex; /* Flexbox aktivieren */
     justify-content: space-between; /* Verteilung des Inhalts */
@@ -171,6 +185,7 @@ article li:hover {
     gap: 20px;
 }
 
+/*Flexbox für "Was ist Hyrox"*/
 .flex-container1 {
     display: flex; /* Flexbox aktivieren */
     justify-content: space-between; /* Verteilung des Inhalts */
@@ -182,6 +197,7 @@ article li:hover {
     gap: 20px; 
 }
 
+/*Flexbox für "Wie kam ich zum Hyrox"*/
 .flex-container2 {
     display: flex; /* Flexbox aktivieren */
     justify-content: space-between; /* Verteilung des Inhalts */
@@ -193,39 +209,61 @@ article li:hover {
     gap: 20px; 
 }
 
+/* Flexbox für die Tabellen und anschließende Formatierung*/
 .flex-container3 {
     display: flex; /* Flexbox aktivieren */
     justify-content: space-around; /* Verteilung des Inhalts */
+    align-items: start; /* Vertikale Zentrierung */
+    height: 100vh; /* Höhe des Viewports */
+    background: linear-gradient(to bottom right , #e9f1f4, #59b2d2);
+    padding: 20px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    gap: 20px;
+    text-align: center;  
+}
+
+.table {
+    width: 500px;                  /* Festgelegte Breite für beide Tabellen */
+    height: 200px;                 /* Festgelegte Höhe für beide Tabellen */
+    border-collapse: collapse;     /* Entfernt die Abstände zwischen den Tabellenzellen */
+    border: 1px solid #ccc;        /* Optional: Rahmen für die Tabellen */
+    table-layout: fixed;           /* Sorgt dafür, dass die Breite der Tabellenzellen gleich bleibt */
+}
+
+.table th, .table td {
+    border: 1px solid #ccc;        /* Rahmen um Zellen */
+    padding: 10px;                 /* Innenabstand in den Zellen */
+    text-align: left;              /* Text linksbündig ausrichten */
+}
+
+.table {
+    overflow: hidden;              /* Verhindert, dass die Tabelle den festgelegten Bereich verlässt */
+}
+
+/*Flexbox für den Footer*/
+.flex-container6 {
+    display: flex; /* Flexbox aktivieren */
+    justify-content: flex-end; /* Verteilung des Inhalts */
     align-items: center; /* Vertikale Zentrierung */
-    height: 80vh; /* Höhe des Viewports */
+    height: 10vh; /* Höhe des Viewports */
     background: linear-gradient(to bottom , #e9f1f4, #59b2d2);
     padding: 20px;
     margin-top: 30px;
     box-sizing: border-box;
-    gap: 20px; 
+    gap: 20px;
+    text-align: center;  
 }
 
-.flex-container4 {
-    display: flex; /* Flexbox aktivieren */
-    justify-content: space-around; /* Verteilung des Inhalts */
-    align-items: center; /* Vertikale Zentrierung */
-    height: 120vh; /* Höhe des Viewports */
-    background-color: #f0f0f0; /* Hintergrundfarbe */
-    padding: 20px;
-    margin-top: 60px;
-    box-sizing: border-box;
+.footer-link {
+    color: #03080c;
 }
 
-.container {
-    text-align: center;  /* Zentriert den Text horizontal */
+.footer-link:hover, /*Links ändern die Farbe wenn die Maus darüber fährt*/
+.footer-link:focus {
+  color:  rgb(73, 111, 148);
 }
 
-.flex-container5 {
-    display: flex; /* Flexbox aktivieren */
-    justify-content: center; /* Verteilung des Inhalts */
-    align-items: center; /* Vertikale Zentrierung */
-    gap: 10px;
-}
 
 @media (max-width: 768px) {
     .flex-container1, .flex-container2, .flex-container3, .flex-container4 {
@@ -233,3 +271,6 @@ article li:hover {
         height: auto; /* Höhe automatisch */
     }
 }
+
+
+

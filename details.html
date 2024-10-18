@@ -8,28 +8,36 @@
 </head>
 <body>
     <header>
-        <h1>HYROX</h1>
-        <p>Alles rund um Hyrox</p>
-                <ul>
-                    <li> 
-                            <img src="https://cdn.pixabay.com/photo/2021/11/18/03/11/gym-6805282_1280.jpg">
-                        <form> 
-                            <input type="search" name="suche" placeholder="Suche"> 
-                        </form>
-                    </li>
-                </ul>
+        <div class="flex-container">
+            <div>
+                <img src="images/image1.jpg" id="bild1">
+            </div>
+            <div>   
+                <div class="container">
+                <div><h1>HYROX</h1></div>
+                <div><p1>Alles rund um Hyrox</p1> </div>
+                </div>
+            </div>
+            <div>
+                <img src="images/image1.jpg" id="bild1">
+            </div>  
+        </div>
         </header>
-        <main>
-            <nav>
-                <ul>
-                    <br>
-                    <li><a href="index.html"> Homepage</a></li>
-                    <li><a href="details.html"> Hyrox-Details </a></li>
-                    <li><a href="weg.html"> Der Weg</a></li>
-                    <li><a href="vorbereitungen.html"> Vorbereitung </a></li>
-                    <li><a href="ernaehrung.html"> Ernährung </a></li>
+    <main>
+        <nav>
+            <div class="flex-container5">
+                <div>
+                <ul class="horizontal-menu">
+                <li> <a href="index.html"> Homepage</a></li>
+                <li> <a href="details.html"> Hyrox-Details </a></li>
+                <li> <a href="weg.html"> Der Weg</a></li>
+                <li> <a href="vorbereitungen.html"> Vorbereitung </a></li>
+                <li> <a href="ernaehrung.html"> Ernährung </a></li>
+                <li> <form action="#"> <input type="search" name="suche" placeholder="Suche" class="search-bar"> </form> </li>
                 </ul>
-            </nav>
+                </div>
+            </div>
+        </nav>
 <setion>
     <h2>Wie läuft ein Hyrox Wettkampf ab?</h2>
     <p>Der Wettkampf beginnt mit einem Kilometerlauf, gefolgt von einer funktionellen Workout-Station. Dieser Ablauf wiederholt sich acht Mal: Laufen, Workout, Laufen, Workout – bis alle acht Stationen absolviert sind.</p>
@@ -98,10 +106,12 @@ Diese acht Stationen, gepaart mit den insgesamt acht Kilometern Laufen, machen d
 
         </main>
         <footer>
-              <ul>
-                  <li><a  href="http://127.0.0.1:5500/ContentSeiten/index.html">Datenschutz</a></li>
-                  <li><a  href="http://127.0.0.1:5500/ContentSeiten/index.html">Impressum</a></li>
-              </ul>
-          </footer>
+            <div class=flex-container6>
+                <ul>
+                    <a  href="index.html" class="footer-link">Datenschutz</a>
+                    <a  href="index.html" class="footer-link">Impressum</a>
+                </ul>
+            <div>
+            </footer>
         </body>
         </html>
