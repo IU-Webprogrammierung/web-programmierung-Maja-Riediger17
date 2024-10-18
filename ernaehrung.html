@@ -8,25 +8,37 @@
 </head>
 <body>
     <header>
-        <h1>HYROX</h1>
-        <p>Alles rund um Hyrox</p>
-            <img src="https://cdn.pixabay.com/photo/2021/11/18/03/11/gym-6805282_1280.jpg">
-    
-        <form> 
-            <input type="search" name="suche" placeholder="Suche"> 
-        </form>
-    </header>
-        <main>
-            <nav>
-                <ul>
-                    <li><a href="index.html"> Homepage</a></li>
-                    <li><a href="details.html"> Hyrox-Details </a></li>
-                    <li><a href="weg.html"> Der Weg</a></li>
-                    <li><a href="vorbereitungen.html"> Vorbereitung </a></li>
-                    <li><a href="ernaehrung.html"> Ernährung </a></li>
+        <div class="flex-container">
+            <div>
+                <img src="images/image1.jpg" id="bild1">
+            </div>
+            <div>   
+                <div class="container">
+                <div><h1>HYROX</h1></div>
+                <div><p1>Alles rund um Hyrox</p1> </div>
+                </div>
+            </div>
+            <div>
+                <img src="images/image1.jpg" id="bild1">
+            </div>  
+        </div>
+        </header>
+    <main>
+        <nav>
+            <div class="flex-container5">
+                <div>
+                <ul class="horizontal-menu">
+                <li> <a href="index.html"> Homepage</a></li>
+                <li> <a href="details.html"> Hyrox-Details </a></li>
+                <li> <a href="weg.html"> Der Weg</a></li>
+                <li> <a href="vorbereitungen.html"> Vorbereitung </a></li>
+                <li> <a href="ernaehrung.html"> Ernährung </a></li>
+                <li> <form action="#"> <input type="search" name="suche" placeholder="Suche" class="search-bar"> </form> </li>
                 </ul>
-            </nav>
-        </main>
+                </div>
+            </div>
+        </nav>
+
 
     <section>
         <h2>In wie weit spielt die Ernährung eine wichtige Rolle im Hyrox Training?</h2>
@@ -110,11 +122,14 @@
             </tbody>
         </table>
     </section>
-    <footer>
+</main>
+<footer>
+    <div class=flex-container6>
         <ul>
-            <li><a  href="index.html">Datenschutz</a></li>
-            <li><a  href="index.html">Impressum</a></li>
+            <a  href="index.html" class="footer-link">Datenschutz</a>
+            <a  href="index.html" class="footer-link">Impressum</a>
         </ul>
+    <div>
     </footer>
-    </body>
-    </html>
+</body>
+</html>

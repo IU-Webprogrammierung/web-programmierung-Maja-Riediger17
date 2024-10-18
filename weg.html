@@ -8,25 +8,37 @@
 </head>
 <body>
     <header>
-        <h1>HYROX</h1>
-        <p>Alles rund um Hyrox</p>
-           
-                <img src="https://cdn.pixabay.com/photo/2021/11/18/03/11/gym-6805282_1280.jpg">
-
-                        <form> 
-                            <input type="search" name="suche" placeholder="Suche"> 
-                        </form>
-    </header>
+        <div class="flex-container">
+            <div>
+                <img src="images/image1.jpg" id="bild1">
+            </div>
+            <div>   
+                <div class="container">
+                <div><h1>HYROX</h1></div>
+                <div><p1>Alles rund um Hyrox</p1> </div>
+                </div>
+            </div>
+            <div>
+                <img src="images/image1.jpg" id="bild1">
+            </div>  
+        </div>
+        </header>
     <main>
-            <nav>
-                <ul>
-                    <li><a href="index.html"> Homepage</a></li>
-                    <li><a href="details.html"> Hyrox-Details </a></li>
-                    <li><a href="weg.html"> Der Weg</a></li>
-                    <li><a href="vorbereitungen.html"> Vorbereitung </a></li>
-                    <li><a href="ernaehrung.html"> Ernährung </a></li>
+        <nav>
+            <div class="flex-container5">
+                <div>
+                <ul class="horizontal-menu">
+                <li> <a href="index.html"> Homepage</a></li>
+                <li> <a href="details.html"> Hyrox-Details </a></li>
+                <li> <a href="weg.html"> Der Weg</a></li>
+                <li> <a href="vorbereitungen.html"> Vorbereitung </a></li>
+                <li> <a href="ernaehrung.html"> Ernährung </a></li>
+                <li> <form action="#"> <input type="search" name="suche" placeholder="Suche" class="search-bar"> </form> </li>
                 </ul>
-            </nav>
+                </div>
+            </div>
+        </nav>
+    
 <section>
     <h2> Wie kam ich zum Hyrox Sport</h2>
     <p>Schon als Kind war der Sport ein zentraler Bestandteil meines Lebens. Ich habe viele Jahre Leichtathletik betrieben und dabei nicht nur meine Ausdauer beim Laufen gestärkt, sondern auch Kraft aufgebaut. Parallel dazu habe ich eine große Leidenschaft für Pferde entwickelt und viel Zeit mit dem Reiten verbracht. Die Balance zwischen Leichtathletik und Reiten war lange Zeit möglich, aber irgendwann stand ich vor der Entscheidung, mich aus Zeitgründen auf eine der beiden Leidenschaften zu konzentrieren. Die Liebe zu Pferden war zu groß, und so habe ich mich damals für das Reiten entschieden.
@@ -73,10 +85,12 @@
 </section>
 </main>
 <footer>
-      <ul>
-          <li><a  href="index.html">Datenschutz</a></li>
-          <li><a  href="index.html">Impressum</a></li>
-      </ul>
-  </footer>
+    <div class=flex-container6>
+        <ul>
+            <a  href="index.html" class="footer-link">Datenschutz</a>
+            <a  href="index.html" class="footer-link">Impressum</a>
+        </ul>
+    <div>
+    </footer>
 </body>
 </html>

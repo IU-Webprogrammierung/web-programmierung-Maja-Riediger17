@@ -1,0 +1,134 @@
+h1 { /*Überschrift oben*/
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    font-size: 3rem;
+    color: #03080c;
+    margin-bottom:4px
+}
+
+p1 { /*Unterüberschrift*/
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    font-size: 1.5rem;
+    color: #03080c;
+}
+
+#bild1 {
+    width: auto;
+    height: 200px;
+}
+
+/*Überschrift in Flexbox*/
+.container {
+    text-align: center;  /* Zentriert den Text horizontal */
+}
+
+nav ul li a { /* Links im Header*/
+    color: #0f6686;
+    font-size: 1.2rem;
+    padding: 5px 10px; 
+    margin-right: 20px; 
+}
+
+nav ul li a:hover, /*Links im Header*/
+nav ul li a:focus {
+  color: #5acdf7; 
+}
+
+.search-bar { /*Suchleiste Design*/
+    width: 200px;              /* Breite */
+    padding: 5px 10px;         /* Abstand zwischen Text und Rand*/
+    border: 2px solid #03080c; /* Rahmenfarbe und -breite */
+    border-radius: 15px;       /* Abgerundete Ecken */
+    font-size: 16px;           /* Schriftgröße */
+    outline: none;    
+        }      
+   
+.search-bar:hover {
+    border-color: #1ca1d1;  
+}
+
+.search-bar:focus {
+    border-color: #1abc9c;     
+}
+
+/* Zentrierung der Suchleiste */
+form {
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+}
+
+/*Flexbox für das Menü*/
+.flex-container5 {
+    display: flex; /* Flexbox aktivieren */
+    justify-content: center; /* Verteilung des Inhalts */
+    align-items: center; /* Vertikale Zentrierung */
+    gap: 10px;
+}
+
+.horizontal-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Listenelemente horizontal */
+.horizontal-menu li, li form {
+    display: inline-block;
+    margin-right: 20px; /* Abstand zwischen den Links */
+}
+
+/*Seitenanfang*/
+.flex-container {
+    display: flex; /* Flexbox aktivieren */
+    justify-content: space-between; /* Verteilung des Inhalts */
+    align-items: start; /* Vertikale Zentrierung */
+    height: 35vh; /* Höhe des Viewports */
+    background: linear-gradient(to bottom right , #c9dfe7, #1ca1d1);  /* Verlauf von hellblau nach mittelblau */
+    padding: 20px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px; /*Schriftgröße */
+    line-height: 1.8; /* Zeilenabstand */
+    color: #333; /* Textfarbe */
+    margin: 0;
+    padding: 40px;
+}
+
+a {
+    color: #2e5983;
+    padding: 5px 10px; 
+    margin-right: 20px; 
+}
+
+a:hover, /*Links ändern die Farbe wenn die Maus darüber fährt*/
+a:focus {
+  color:  rgb(118, 181, 245);
+}
+
+/*Flexbox für den Footer*/
+.flex-container6 {
+    display: flex; /* Flexbox aktivieren */
+    justify-content: flex-end; /* Verteilung des Inhalts */
+    align-items: center; /* Vertikale Zentrierung */
+    height: 10vh; /* Höhe des Viewports */
+    background: linear-gradient(to bottom , #e9f1f4, #59b2d2);
+    padding: 20px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    gap: 20px;
+    text-align: center;  
+}
+
+.footer-link {
+    color: #03080c;
+}
+
+.footer-link:hover, /*Links ändern die Farbe wenn die Maus darüber fährt*/
+.footer-link:focus {
+  color:  rgb(73, 111, 148);
+}
