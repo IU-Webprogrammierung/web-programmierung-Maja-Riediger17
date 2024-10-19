@@ -59,7 +59,11 @@ form {
     justify-content: center; /* Verteilung des Inhalts */
     align-items: center; /* Vertikale Zentrierung */
     gap: 10px;
-}
+    padding: 10px 10px;
+    background-color: #cbf4fe;
+    margin: 0;
+    margin-bottom: 10px;
+} 
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -183,7 +187,7 @@ article li:hover {
     height: 35vh; /* Höhe des Viewports */
     background: linear-gradient(to bottom right , #c9dfe7, #1ca1d1);  /* Verlauf von hellblau nach mittelblau */
     padding: 20px;
-    margin-bottom: 30px;
+    margin:0;
     box-sizing: border-box;
     gap: 20px;
 }
@@ -195,7 +199,7 @@ article li:hover {
     align-items: center; /* Vertikale Zentrierung */
     height: 70vh; /* Höhe des Viewports */
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 10px;
     box-sizing: border-box;
     gap: 20px; 
 }
