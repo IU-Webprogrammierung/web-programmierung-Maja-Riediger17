@@ -67,7 +67,7 @@ form {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px; /*Schriftgröße */
+    font-size: 18px; /*Schriftgröße */
     line-height: 1.8; /* Zeilenabstand */
     color: #333; /* Textfarbe */
     margin: 0;
@@ -91,12 +91,12 @@ a:focus {
 }
 
 #bild4 {
-    width: 500px;
+    width: 550px;
     height: auto;
 }
 
 #bild2 {
-    width: 500px;
+    width: 550px;
     height: auto;
 }
 
@@ -108,7 +108,7 @@ article {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px; 
     line-height: 1.8; 
-    color: #333; /
+    color: #333; 
     margin: 0;
     padding: 40px;
     }
@@ -199,9 +199,11 @@ article li:hover {
     align-items: center; /* Vertikale Zentrierung */
     height: 70vh; /* Höhe des Viewports */
     padding: 20px;
-    margin-top: 10px;
+    margin-top: 30px;
     box-sizing: border-box;
     gap: 20px; 
+    font-size: 19px; /*Schriftgröße */
+    width: 100%
 }
 
 /*Flexbox für "Wie kam ich zum Hyrox"*/
@@ -214,6 +216,8 @@ article li:hover {
     margin-top: 5px;
     box-sizing: border-box;
     gap: 20px; 
+    font-size: 19px; /*Schriftgröße */
+    width: 100%
 }
 
 /* Flexbox für die Tabellen und anschließende Formatierung*/
