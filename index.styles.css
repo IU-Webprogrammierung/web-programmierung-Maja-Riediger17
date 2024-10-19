@@ -67,7 +67,7 @@ form {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px; /*Schriftgröße */
+    font-size: 20px; /*Schriftgröße */
     line-height: 1.8; /* Zeilenabstand */
     color: #333; /* Textfarbe */
     margin: 0;
@@ -211,7 +211,7 @@ article li:hover {
     align-items: center; /* Vertikale Zentrierung */
     height: 60vh; /* Höhe des Viewports */
     padding: 20px;
-    margin-top: 10px;
+    margin-top: 5px;
     box-sizing: border-box;
     gap: 20px; 
 }
