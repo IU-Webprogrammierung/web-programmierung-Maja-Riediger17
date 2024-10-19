@@ -64,6 +64,7 @@ form {
     justify-content: center; /* Verteilung des Inhalts */
     align-items: center; /* Vertikale Zentrierung */
     gap: 10px;
+    padding-bottom: 80px;
 }
 
 .horizontal-menu {
@@ -136,17 +137,19 @@ a:focus {
 
 
 .table-dezent {
-    width: 100%;                        /* Tabelle auf 100% der Breite */
-    border-collapse: collapse;          /* Entfernt doppelte Rahmen */
-    margin: 20px 0;                     /* Abstand nach oben und unten */
+    width: 95%;                        /* Tabelle auf 100% der Breite */
+    border-collapse: seperate;          /* Entfernt doppelte Rahmen */
+    margin: 0 auto;                     /* Abstand nach oben und unten */
     font-size: 16px;                    /* Textgröße */
     font-family: Arial, sans-serif;     /* Schriftart */
-    color: #333;                        /* Textfarbe */
+    color: #333;   
+    border-spacing: 5px;                      
 }
 
 .table-dezent th, .dezent-table td {
     padding: 12px 15px;                 /* Innenabstand in den Zellen */
-    text-align: left;                   /* Text linksbündig */
+    text-align: center;                 /* Horizontale Zentrierung des Textes */
+    vertical-align: middle;          
     border-bottom: 1px solid #ddd;      /* Dezente Trennlinie */
 }
 
@@ -159,10 +162,26 @@ a:focus {
     background-color: #f2f2f2;          /* Heller Hintergrund für gerade Zeilen */
 }
 
-.table-dezent tr:hover {
-    background-color: #f1f1f1;          /* Leichter Hover-Effekt bei Mausüberfahren */
-}
-
 tbody td:first-child {
     font-weight: bold;         /* Erste Spalte fett formatieren */
+    width: 15%;
+    text-align: center; 
+}
+.table-dezent th:nth-child(2), .table-dezent td:nth-child(2) {
+    width: 65%;                   /* Zweite Spalte ist 20% der Tabellenbreite */
+    text-align: center;
+}
+
+.table-dezent td img {
+    width: 300px;      /* Breite der Bilder */
+    height: 200px;     /* Höhe der Bilder */
+    object-fit: cover; /* Zuschneiden der Bilder, um sie gleichmäßig anzupassen */
+}
+
+.text {
+    margin: 20px;
+}
+
+.underline {
+    text-decoration: underline solid #2e5983;; /* Unterstreicht die Überschriften */
 }
