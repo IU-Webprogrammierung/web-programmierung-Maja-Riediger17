@@ -190,6 +190,10 @@ a:focus {
     margin: 20px;
 }
 
+.abstand {
+    margin-top: 60px;
+}
+
 
 .nutrition-table thead {
     background-color: lightblue;            /* Grüne Kopfzeile, passend zum Ernährungsdesign */
@@ -235,6 +239,7 @@ a:focus {
     align-items: center;
     padding: 20px;
     gap: 30px;
+    margin-bottom: 40px;
 }
 
 
