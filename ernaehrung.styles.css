@@ -149,7 +149,9 @@ a:focus {
 
 #bild15 {
     width: 400px;
-    height: 250px
+    height: 250px;
+    border-radius: 10px;             /* Bilder mit abgerundeten Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .start {
@@ -181,10 +183,56 @@ a:focus {
 #bild16, #bild17, #bild18, #bild19 {
     width: auto;
     height: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .text {
     margin: 20px;
+}
+
+.nutrition-table thead {
+    background-color: lightblue;            /* Grüne Kopfzeile, passend zum Ernährungsdesign */
+    color: black;                         /* Weißer Text in der Kopfzeile */
+}
+
+.nutrition-table th, .nutrition-table td {
+    padding: 12px 15px;                   /* Polsterung für mehr Platz in den Zellen */
+    border: 1px solid #dddddd;            /* Leichte Ränder für die Zellen */
+}
+
+.nutrition-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;            /* Abwechselnde Hintergrundfarben für die Zeilen */
+}
+
+.nutrition-table tbody tr:nth-child(odd) {
+    background-color: #fff;               /* Weiße Hintergrundfarbe für ungerade Zeilen */
+}
+
+.images-healthy {
+    display: flex;
+    flex-wrap: wrap;                 /* Elemente werden in mehrere Zeilen umgebrochen */
+    justify-content: space-around;   /* Bilder gleichmäßig horizontal verteilen */
+    gap: 20px;                       /* Abstand zwischen den Bildern */
+}
+
+.image-item {
+    flex: 1 1 calc(50% - 20px);      /* Jedes Bild nimmt die Hälfte der Breite ein, mit Abstand */
+    box-sizing: border-box;          /* Stellt sicher, dass der Abstand korrekt berechnet wird */
+}
+
+.image-item img {
+    width: 100%;                     /* Bilder füllen das Flex-Item komplett aus */
+    height: auto;                    /* Höhe passt sich proportional an */
+    border-radius: 10px;             /* Bilder mit abgerundeten Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Leichter Schatten um die Bilder */
+}
+
+
+.outer-flexbox {
+    display: flex;
+    justify-content: space-around;  /* Elemente gleichmäßig verteilen */
+    text-align: center;
+    padding: 20px;
 }
 
 
