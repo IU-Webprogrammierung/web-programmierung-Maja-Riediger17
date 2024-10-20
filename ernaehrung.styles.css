@@ -114,6 +114,43 @@ a:focus {
   color:  rgb(118, 181, 245);
 }
 
+
+
+.box {
+    display: flex;                       /* Aktiviert Flexbox */
+    justify-content: space-between;      /* Verteilt die Boxen mit Abstand */
+    gap: 20px;                           /* Abstand zwischen den Boxen */
+    padding: 10px;                       /* Innenabstand innerhalb des Containers */
+}
+
+.box1, .box2 {
+    background-color: lightblue;        /* Hintergrundfarbe der Flexbox */
+    flex: 1;                             /* Beide Flexboxen bekommen gleiche Breite */
+    padding: 10px;                       /* Innenabstand innerhalb der Flexboxen */
+    text-align: center;                  /* Text zentrieren */
+    border-radius: 5px;                 /* Runde Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Ein leichter Schatten für Tiefe */
+}
+
+.zentrieren  {
+    text-align: center;
+}
+
+.fett {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline solid #2e5983;; /* Unterstreicht die Überschriften */
+}
+
+
+
+
+
+
+
 /*Flexbox für den Footer*/
 .flex-container6 {
     display: flex; /* Flexbox aktivieren */
