@@ -93,11 +93,13 @@ a:focus {
 #bild4 {
     width: 550px;
     height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 #bild2 {
     width: 550px;
     height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .underline {
@@ -240,7 +242,8 @@ article li:hover {
     height: 200px;                 /* Festgelegte Höhe für beide Tabellen */
     border-collapse: collapse;     /* Entfernt die Abstände zwischen den Tabellenzellen */
     border: 1px solid #ccc;        /* Optional: Rahmen für die Tabellen */
-    table-layout: fixed;           /* Sorgt dafür, dass die Breite der Tabellenzellen gleich bleibt */
+    table-layout: fixed;               
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);         /* Sorgt dafür, dass die Breite der Tabellenzellen gleich bleibt */
 }
 
 .table th, .table td {
