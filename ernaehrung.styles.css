@@ -190,6 +190,7 @@ a:focus {
     margin: 20px;
 }
 
+
 .nutrition-table thead {
     background-color: lightblue;            /* Grüne Kopfzeile, passend zum Ernährungsdesign */
     color: black;                         /* Weißer Text in der Kopfzeile */
@@ -222,7 +223,7 @@ a:focus {
 
 .image-item img {
     width: 100%;                     /* Bilder füllen das Flex-Item komplett aus */
-    height: auto;                    /* Höhe passt sich proportional an */
+    height: 250px;                    /* Höhe passt sich proportional an */
     border-radius: 10px;             /* Bilder mit abgerundeten Ecken */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Leichter Schatten um die Bilder */
 }
@@ -231,8 +232,9 @@ a:focus {
 .outer-flexbox {
     display: flex;
     justify-content: space-around;  /* Elemente gleichmäßig verteilen */
-    text-align: center;
+    align-items: center;
     padding: 20px;
+    gap: 30px;
 }
 
 
