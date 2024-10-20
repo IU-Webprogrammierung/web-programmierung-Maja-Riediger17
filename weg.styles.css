@@ -113,6 +113,19 @@ a:hover, /*Links ändern die Farbe wenn die Maus darüber fährt*/
 a:focus {
   color:  rgb(118, 181, 245);
 }
+ 
+.text {
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
 
 /*Flexbox für den Footer*/
 .flex-container6 {
