@@ -151,8 +151,18 @@ a:focus {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
+.zentrieren  {
+    text-align: center;
+}
 
+.fett {
+    font-weight: 500;
+    font-style: italic;
+}
 
+.underline {
+    text-decoration: underline solid #2e5983;; /* Unterstreicht die Überschriften */
+}
 
 
 /*Flexbox für den Footer*/
@@ -181,15 +191,3 @@ a:focus {
 
 
 
-.zentrieren  {
-    text-align: center;
-}
-
-.fett {
-    font-weight: 500;
-    font-style: italic;
-}
-
-.underline {
-    text-decoration: underline solid #2e5983;; /* Unterstreicht die Überschriften */
-}
