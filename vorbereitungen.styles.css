@@ -124,7 +124,11 @@ a:focus {
 }
 
 .underline {
-    text-decoration: underline solid #2e5983;; /* Unterstreicht die Überschriften */
+    text-decoration: underline solid #2e5983; /* Unterstreicht die Überschriften */
+}
+
+.abstand {
+    margin-top: 60px;
 }
 
 .box {
@@ -144,6 +148,75 @@ a:focus {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Ein leichter Schatten für Tiefe */
     list-style-type: none;
 }
+
+.header-box {
+    background-color: #cbf4fe;  /* Helles Blau als Hintergrund */
+    padding: 8px;              /* Innenabstand um die Überschrift */
+    text-align: center;         /* Überschrift mittig ausrichten */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Leichter Schatten */
+    max-width: 400px;           /* Maximale Breite der Box */
+    margin: 20px auto; 
+    margin-top: 50px;         /* Zentriert die Box auf der Seite */
+}
+
+.ueberschrift {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: black;            /* Gleiche Farbe wie der Rand */
+    margin: 0;                 /* Entfernt Standardabstand der Überschrift */
+}
+
+
+
+.training-plan {
+    width: 100%;
+    table-layout: auto;
+    margin: 5px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Dezenter Hintergrund */
+    border: 1px solid #ddd;    /* Helle Umrandung */
+    margin-top: 40px;
+}
+
+.training-plan thead th {
+    background-color:  #cbf4fe;; /* Blauer Hintergrund für die Kopfzeile */
+    color: rgb(0, 0, 0);              /* Weiße Schrift für die Kopfzeile */
+    padding: 10px;             /* Innenabstand */
+    text-align: center;        /* Zentriert die Überschrift */
+    font-size: 18px;           /* Etwas größere Schrift */
+}
+
+.training-plan tbody td {
+    padding: 15px;             /* Innenabstand zu den Zellen */
+    border: 1px solid #ddd;    /* Dezente Linie zwischen den Zellen */
+    vertical-align: top;       /* Ausrichtung am oberen Rand */
+    background-color: #ffffff; /* Heller Hintergrund für die Tabelle */
+    font-size: 16px;           /* Angenehme Schriftgröße */
+}
+
+.training-plan h4 {
+    margin: 0 0 10px 0;        /* Kein Abstand oben, 10px unten */
+    font-size: 18px;           /* Überschrift etwas größer */
+    color: #333;               /* Dunklere Schriftfarbe */
+}
+
+
+.training-plan ul li {
+    margin: 5px 0;             /* Leichter Abstand zwischen den Listenelementen */
+}
+
+.training-plan tbody tr:nth-child(even) {
+    background-color: #f0f8ff; /* Leicht alternierende Zeilenfarbe */
+}
+
+.training-plan th,
+.training-plan td {
+    width: 25%; /* Jede Spalte nimmt 25% der Gesamtbreite der Tabelle ein */
+}
+
+
+
 
 /*Flexbox für den Footer*/
 .flex-container6 {
