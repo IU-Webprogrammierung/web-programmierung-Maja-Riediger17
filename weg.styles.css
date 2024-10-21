@@ -86,7 +86,6 @@ form {
     display: flex; /* Flexbox aktivieren */
     justify-content: space-between; /* Verteilung des Inhalts */
     align-items: start; /* Vertikale Zentrierung */
-    height: 35vh; /* Höhe des Viewports */
     background: linear-gradient(to bottom right , #c9dfe7, #1ca1d1);  /* Verlauf von hellblau nach mittelblau */
     padding: 20px;
     margin: 0;
@@ -123,7 +122,6 @@ a:focus {
     display: flex; /* Flexbox aktivieren */
     justify-content: space-between; /* Verteilung des Inhalts */
     align-items: center; /* Vertikale Zentrierung */
-    height: 120vh; /* Höhe des Viewports */
     padding: 20px;
     margin-top: 30px;
     box-sizing: border-box;
@@ -133,19 +131,19 @@ a:focus {
 }
 
 .item img{
-    width: 350px;
+    max-width: 350px;
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .item1 img {
-    width:500px;
+    max-width:500px;
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .item2 img {
-    width:350px;
+    max-width:350px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
@@ -228,5 +226,55 @@ a:focus {
 
     .nav-links.active {
         display: flex; /* Zeigt das Menü bei Klick */
+    }
+}
+
+@media (max-width: 1025px) {
+    .header-image {
+        display: none;
+    }
+}
+
+@media (max-width: 541px) {
+    .header-image2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p1 {
+        font-size: 1.2rem;
+    }
+
+    .container-weg {
+        flex-direction: column;
+    }
+
+    .horizontal-menu li {
+        display: block;
+        margin-right: 0;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .container-weg {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-bar {
+        width: 100%;
     }
 }
