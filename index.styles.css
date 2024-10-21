@@ -65,6 +65,7 @@ form {
     margin-bottom: 10px;
 } 
 
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px; /*Schriftgröße */
@@ -72,6 +73,7 @@ body {
     color: #333; /* Textfarbe */
     margin: 0;
     padding: 40px;
+    box-sizing:border-box;
 }
 
 a {
@@ -192,6 +194,7 @@ article li:hover {
     margin:0;
     box-sizing: border-box;
     gap: 20px;
+    flex-wrap: nowrap;
 }
 
 /*Flexbox für "Was ist Hyrox"*/
@@ -199,42 +202,42 @@ article li:hover {
     display: flex; /* Flexbox aktivieren */
     justify-content: space-between; /* Verteilung des Inhalts */
     align-items: center; /* Vertikale Zentrierung */
-    height: 70vh; /* Höhe des Viewports */
     padding: 20px;
     margin-top: 30px;
     box-sizing: border-box;
     gap: 20px; 
     font-size: 19px; /*Schriftgröße */
-    width: 100%
+    width: 100%;
+    max-width: 100%;
 }
+
 
 /*Flexbox für "Wie kam ich zum Hyrox"*/
 .flex-container2 {
     display: flex; /* Flexbox aktivieren */
     justify-content: space-between; /* Verteilung des Inhalts */
     align-items: center; /* Vertikale Zentrierung */
-    height: 60vh; /* Höhe des Viewports */
     padding: 20px;
     margin-top: 5px;
     box-sizing: border-box;
     gap: 20px; 
     font-size: 19px; /*Schriftgröße */
-    width: 100%
+    width: 100%;
 }
 
 /* Flexbox für die Tabellen und anschließende Formatierung*/
 .flex-container3 {
     display: flex; /* Flexbox aktivieren */
-    justify-content: space-around; /* Verteilung des Inhalts */
-    align-items: start; /* Vertikale Zentrierung */
-    height: 95vh; /* Höhe des Viewports */
+    justify-content: center; /* Verteilung des Inhalts */
+    align-items: center; /* Vertikale Zentrierung */
     background: linear-gradient(to bottom right , #e9f1f4, #59b2d2);
     border-radius: 15px; 
     padding: 5px 10px 5px 10px;
     margin-top: 30px;
     box-sizing: border-box;
     gap: 20px;
-    text-align: center;  
+    text-align: center; 
+    
 }
 
 .table {
@@ -291,5 +294,102 @@ tbody td:first-child {
     }
 }
 
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
 
+    p1 {
+        font-size: 1.2rem;
+    }
 
+    .table {
+        font-size: 0.9rem;
+    }
+
+    .flex-container1, .flex-container2 {
+        flex-direction: column;
+    }
+
+    .flex-container5 ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .horizontal-menu li {
+        display: block;
+        margin-right: 0;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p1 {
+        font-size: 1rem;
+    }
+
+    .flex-container, .flex-container1, .flex-container2, .flex-container3 {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-image {
+        display: none;
+    }
+}
+
+/* Hamburger Menü (Standardmäßig versteckt) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 2px;
+}
+
+/* Menü auf kleineren Bildschirmen */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Versteckt das Menü */
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        text-align: right;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .hamburger {
+        display: flex; /* Zeigt das Hamburger-Icon */
+    }
+
+    .nav-links.active {
+        display: flex; /* Zeigt das Menü bei Klick */
+    }
+}

@@ -19,15 +19,15 @@
                 </div>
             </div>
             <div>
-                <img src="images/image1.jpg" id="bild1">
+                <img class="header-image" src="images/image1.jpg" id="bild1">
             </div>  
         </div>
         </header>
     <main>
-        <nav>
-            <div class="flex-container5">
+        <nav class="navbar">
+               <div class="flex-container5 logo">
                 <div>
-                <ul class="horizontal-menu">
+                <ul class="horizontal-menu nav-links" id="navLinks">
                 <li> <a href="index.html"> Homepage</a></li>
                 <li> <a href="details.html"> Hyrox-Details </a></li>
                 <li> <a href="weg.html"> Der Weg</a></li>
@@ -35,6 +35,11 @@
                 <li> <a href="ernaehrung.html"> Ernährung </a></li>
                 <li> <form action="#"> <input type="search" name="suche" placeholder="Suche" class="search-bar"> </form> </li>
                 </ul>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </nav>
@@ -185,6 +190,7 @@
         </ul>
     <div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
 
