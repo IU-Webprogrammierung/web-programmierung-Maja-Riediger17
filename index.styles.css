@@ -88,18 +88,18 @@ a:focus {
 }
 
 #bild1 {
-    width: auto;
-    height: 200px;
+    max-width: auto;
+    max-height: 200px;
 }
 
 #bild4 {
-    width: 550px;
+    max-width: 100%;
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 #bild2 {
-    width: 550px;
+    max-width: 100%;
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
@@ -207,7 +207,6 @@ article li:hover {
     box-sizing: border-box;
     gap: 20px; 
     font-size: 19px; /*Schriftgröße */
-    width: 100%;
     max-width: 100%;
 }
 
@@ -222,7 +221,7 @@ article li:hover {
     box-sizing: border-box;
     gap: 20px; 
     font-size: 19px; /*Schriftgröße */
-    width: 100%;
+    max-width: 100%;
 }
 
 /* Flexbox für die Tabellen und anschließende Formatierung*/
@@ -237,12 +236,13 @@ article li:hover {
     box-sizing: border-box;
     gap: 20px;
     text-align: center; 
+    max-width: 100%;
     
 }
 
 .table {
-    width: 500px;                  /* Festgelegte Breite für beide Tabellen */
-    height: 200px;                 /* Festgelegte Höhe für beide Tabellen */
+    max-width: 500px;                  /* Festgelegte Breite für beide Tabellen */
+    max-height: 200px;                 /* Festgelegte Höhe für beide Tabellen */
     border-collapse: collapse;     /* Entfernt die Abstände zwischen den Tabellenzellen */
     border: 1px solid #ccc;        /* Optional: Rahmen für die Tabellen */
     table-layout: fixed;               
@@ -268,7 +268,6 @@ tbody td:first-child {
     display: flex; /* Flexbox aktivieren */
     justify-content: flex-end; /* Verteilung des Inhalts */
     align-items: center; /* Vertikale Zentrierung */
-    height: 10vh; /* Höhe des Viewports */
     background: linear-gradient(to bottom , #e9f1f4, #59b2d2);
     padding: 20px;
     margin-top: 30px;
@@ -287,14 +286,14 @@ tbody td:first-child {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1025px) {
     .flex-container1, .flex-container2, .flex-container3, .flex-container4 {
         flex-direction: column; /* Stapelt die Elemente untereinander */
         height: auto; /* Höhe automatisch */
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1025px) {
     h1 {
         font-size: 2rem;
     }
@@ -326,7 +325,7 @@ tbody td:first-child {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 400px) {
     h1 {
         font-size: 1.5rem;
     }
@@ -345,8 +344,14 @@ tbody td:first-child {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1025px) {
     .header-image {
+        display: none;
+    }
+}
+
+@media (max-width: 541px) {
+    .header-image2 {
         display: none;
     }
 }
@@ -366,8 +371,8 @@ tbody td:first-child {
     border-radius: 2px;
 }
 
-/* Menü auf kleineren Bildschirmen */
-@media (max-width: 768px) {
+/* Menü auf allen Ipad Bildschirmen */
+@media (max-width: 1025px) {
     .nav-links {
         display: none; /* Versteckt das Menü */
         position: absolute;
@@ -376,7 +381,7 @@ tbody td:first-child {
         width: 100%;
         background-color: #333;
         flex-direction: column;
-        text-align: right;
+        text-align: start;
         padding: 10px 0;
     }
 
