@@ -24,20 +24,25 @@
         </div>
         </header>
     <main>
-        <nav>
-            <div class="flex-container5">
-                <div>
-                <ul class="horizontal-menu">
-                <li> <a href="index.html"> Homepage</a></li>
-                <li> <a href="details.html"> Hyrox-Details </a></li>
-                <li> <a href="weg.html"> Der Weg</a></li>
-                <li> <a href="vorbereitungen.html"> Vorbereitung </a></li>
-                <li> <a href="ernaehrung.html"> Ernährung </a></li>
-                <li> <form action="#"> <input type="search" name="suche" placeholder="Suche" class="search-bar"> </form> </li>
-                </ul>
-                </div>
-            </div>
-        </nav>
+        <nav class="navbar">
+            <div class="flex-container5 logo">
+             <div>
+             <ul class="horizontal-menu nav-links" id="navLinks">
+             <li> <a href="index.html"> Homepage</a></li>
+             <li> <a href="details.html"> Hyrox-Details </a></li>
+             <li> <a href="weg.html"> Der Weg</a></li>
+             <li> <a href="vorbereitungen.html"> Vorbereitung </a></li>
+             <li> <a href="ernaehrung.html"> Ernährung </a></li>
+             <li> <form action="#"> <input type="search" name="suche" placeholder="Suche" class="search-bar"> </form> </li>
+             </ul>
+             </div>
+             <div class="hamburger" id="hamburger">
+                 <span></span>
+                 <span></span>
+                 <span></span>
+             </div>
+         </div>
+     </nav>
 <article>
     <h2 class="text underline"> Wie bereitet man sich gut auf den ersten Hyrox-Wettkampf vor?</h2>
     <div class="container-vorbereitung">
@@ -304,5 +309,6 @@
         </ul>
     <div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
