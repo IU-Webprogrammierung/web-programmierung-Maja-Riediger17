@@ -148,10 +148,11 @@ a:focus {
 }
 
 #bild15 {
-    width: 400px;
-    height: 250px;
+    max-width: 400px;
+    max-height: 250px;
     border-radius: 10px;             /* Bilder mit abgerundeten Ecken */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: center;
 }
 
 .start {
@@ -182,7 +183,7 @@ a:focus {
 
 #bild16, #bild17, #bild18, #bild19 {
     width: auto;
-    height: 250px;
+    max-height: 250px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
@@ -194,6 +195,9 @@ a:focus {
     margin-top: 60px;
 }
 
+.table {
+    max-width: 50%;
+}
 
 .nutrition-table thead {
     background-color: lightblue;            /* Grüne Kopfzeile, passend zum Ernährungsdesign */
@@ -217,7 +221,7 @@ a:focus {
     display: flex;
     flex-wrap: wrap;                 /* Elemente werden in mehrere Zeilen umgebrochen */
     justify-content: space-around;   /* Bilder gleichmäßig horizontal verteilen */
-    gap: 20px;                       /* Abstand zwischen den Bildern */
+    gap: 10px;                       /* Abstand zwischen den Bildern */
 }
 
 .image-item {
@@ -226,12 +230,11 @@ a:focus {
 }
 
 .image-item img {
-    width: 100%;                     /* Bilder füllen das Flex-Item komplett aus */
-    height: 250px;                    /* Höhe passt sich proportional an */
+    max-width: 100%;                     /* Bilder füllen das Flex-Item komplett aus */
+    max-height: 250px;                    /* Höhe passt sich proportional an */
     border-radius: 10px;             /* Bilder mit abgerundeten Ecken */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Leichter Schatten um die Bilder */
 }
-
 
 .outer-flexbox {
     display: flex;
@@ -267,6 +270,12 @@ a:focus {
   color:  rgb(73, 111, 148);
 }
 
+.responsive-image {
+    display: block;
+    max-width: auto; /* Verhindert, dass das Bild größer als der Container wird */
+    max-height: 250px;
+    margin: 0 auto; /* Horizontales Zentrieren */
+  }
 
 /* Hamburger Menü (Standardmäßig versteckt) */
 .hamburger {
@@ -308,5 +317,65 @@ a:focus {
 
     .nav-links.active {
         display: flex; /* Zeigt das Menü bei Klick */
+    }
+}
+
+@media (max-width: 1025px) {
+    .header-image {
+        display: none;
+    }
+}
+
+@media (max-width: 541px) {
+    .header-image2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p1 {
+        font-size: 1.2rem;
+    }
+
+    .start, .box, .box1, .box2, .box3, .images-healthy, .outer-flexbox {
+        flex-direction: column;
+    }
+
+@media (max-width: 768px) {
+            .responsive-image {
+              display: block;
+              max-width: 80%; /* Bildgröße anpassen für kleinere Bildschirme */
+              margin-left: auto;
+              margin-right: auto;
+            }
+          }
+
+
+    .horizontal-menu li {
+        display: block;
+        margin-right: 0;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .start {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-bar {
+        width: 100%;
     }
 }
