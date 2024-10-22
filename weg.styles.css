@@ -137,7 +137,7 @@ a:focus {
 }
 
 .item1 img {
-    max-width:500px;
+    max-width:550px;
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
@@ -202,7 +202,7 @@ a:focus {
 }
 
 /* Menü auf kleineren Bildschirmen */
-@media (max-width: 768px) {
+@media (max-width: 1025px) {
     .nav-links {
         display: none; /* Versteckt das Menü */
         position: absolute;
