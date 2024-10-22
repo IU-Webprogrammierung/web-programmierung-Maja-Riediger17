@@ -12,8 +12,8 @@ p1 { /*Unterüberschrift*/
 }
 
 #bild1 {
-    width: auto;
-    height: 200px;
+    max-width: auto;
+    max-height: 200px;
 }
 
 /*Überschrift in Flexbox*/
@@ -166,7 +166,10 @@ a:focus {
     margin: 0;                 /* Entfernt Standardabstand der Überschrift */
 }
 
-
+.scrollen {
+    overflow-x: auto; /* Ermöglicht horizontales Scrollen */
+    -webkit-overflow-scrolling: touch; /* Für mobiles Scrollen */
+}
 
 .training-plan {
     width: 100%;
@@ -177,6 +180,12 @@ a:focus {
     background-color: #f9f9f9; /* Dezenter Hintergrund */
     border: 1px solid #ddd;    /* Helle Umrandung */
     margin-top: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Vermeidet doppelte Ränder */
+    min-width: 600px; /* Mindestens benötigte Breite der Tabelle */
 }
 
 .training-plan thead th {
@@ -350,5 +359,17 @@ a:focus {
 
     .search-bar {
         width: 100%;
+    }
+}
+
+/* Media Queries für kleinere Bildschirme */
+@media (max-width: 543px) {
+    th, td {
+        padding: 6px 8px;
+        font-size: 14px;
+    }
+
+    table {
+        min-width: 400px; /* Setzt die minimale Breite der Tabelle bei kleinen Bildschirmen */
     }
 }

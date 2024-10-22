@@ -13,8 +13,8 @@ p1 { /*Unterüberschrift*/
 }
 
 #bild1 {
-    width: auto;
-    height: 200px;
+    max-width: auto;
+    max-height: 200px;
 }
 
 /*Überschrift in Flexbox*/
