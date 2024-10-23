@@ -229,8 +229,8 @@ a:focus {
 }
 
 .image-item img {
-    max-width: 100%;                     /* Bilder füllen das Flex-Item komplett aus */
-    max-height: 250px;                    /* Höhe passt sich proportional an */
+    max-width: 400px;                     /* Bilder füllen das Flex-Item komplett aus */
+    max-height: auto;                    /* Höhe passt sich proportional an */
     border-radius: 10px;             /* Bilder mit abgerundeten Ecken */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Leichter Schatten um die Bilder */
 }
