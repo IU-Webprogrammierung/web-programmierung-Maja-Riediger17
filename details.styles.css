@@ -15,6 +15,7 @@ p1 { /*Unterüberschrift*/
 #bild1 {
     max-width: auto;
     max-height: 200px;
+    overflow: hidden;
 }
 
 /*Überschrift in Flexbox*/
@@ -87,7 +88,6 @@ form {
     display: flex; /* Flexbox aktivieren */
     justify-content: space-between; /* Verteilung des Inhalts */
     align-items: start; /* Vertikale Zentrierung */
-    height: 35vh; /* Höhe des Viewports */
     background: linear-gradient(to bottom right , #c9dfe7, #1ca1d1);  /* Verlauf von hellblau nach mittelblau */
     padding: 20px;
     margin: 0;
@@ -138,6 +138,10 @@ a:focus {
   color:  rgb(73, 111, 148);
 }
 
+.scrollen {
+    overflow-x: auto; /* Ermöglicht horizontales Scrollen */
+    -webkit-overflow-scrolling: touch; /* Für mobiles Scrollen */
+}
 
 .table-dezent {
     width: 95%;                        /* Tabelle auf 100% der Breite */
@@ -191,9 +195,10 @@ tbody td:first-child {
 }
 
 img {
-    width: 600px;
-    height: auto;
+    max-width: 600px;
+    max-height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    display:  block;
 }
 
 /* Hamburger Menü (Standardmäßig versteckt) */
@@ -236,5 +241,68 @@ img {
 
     .nav-links.active {
         display: flex; /* Zeigt das Menü bei Klick */
+    }
+}
+
+@media (max-width: 1025px) {
+    .header-image {
+        display: none;
+    }
+}
+
+@media (max-width: 541px) {
+    .header-image2 {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1025px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p1 {
+        font-size: 1.2rem;
+    }
+
+    .table-dezent, .text {
+        flex-direction: column;
+    }
+
+    .horizontal-menu li {
+        display: block;
+        margin-right: 0;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .table-dezent, .text {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+}
+
+/* Media Queries für kleinere Bildschirme */
+@media (max-width: 400px) {
+    th, td {
+        padding: 6px 8px;
+        font-size: 14px;
+    }
+
+    table {
+        min-width: 400px; /* Setzt die minimale Breite der Tabelle bei kleinen Bildschirmen */
     }
 }
