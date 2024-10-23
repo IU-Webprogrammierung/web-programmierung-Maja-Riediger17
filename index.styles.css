@@ -188,7 +188,6 @@ article li:hover {
     display: flex; /* Flexbox aktivieren */
     justify-content: space-between; /* Verteilung des Inhalts */
     align-items: start; /* Vertikale Zentrierung */
-    height: 35vh; /* Höhe des Viewports */
     background: linear-gradient(to bottom right , #c9dfe7, #1ca1d1);  /* Verlauf von hellblau nach mittelblau */
     padding: 20px;
     margin:0;
