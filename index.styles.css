@@ -92,6 +92,11 @@ a:focus {
     max-height: 200px;
 }
 
+#bild01 {
+    max-width: auto;
+    max-height: 200px;
+}
+
 #bild4 {
     max-width: 100%;
     height: auto;

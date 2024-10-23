@@ -16,6 +16,11 @@ p1 { /*Unterüberschrift*/
     max-height: 200px;
 }
 
+#bild01 {
+    max-width: auto;
+    max-height: 200px;
+}
+
 /*Überschrift in Flexbox*/
 .container {
     text-align: center;  /* Zentriert den Text horizontal */

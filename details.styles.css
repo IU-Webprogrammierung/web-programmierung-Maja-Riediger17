@@ -17,6 +17,11 @@ p1 { /*Unterüberschrift*/
     max-height: 200px;
     overflow: hidden;
 }
+#bild01 {
+    max-width: auto;
+    max-height: 200px;
+    overflow: hidden;
+}
 
 /*Überschrift in Flexbox*/
 .container {
