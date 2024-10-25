@@ -9,21 +9,15 @@
 </head>
 
 <body>
-    <header>
+    <header role="banner">
         <div class="flex-container">
             <div>
                 <img class="header-image2" src="images/image1.jpg" id="bild1"
                     alt="Das Bild zeigt eine große Sporthalle mit vielen Teilnehmern und Zuschauern, die sich auf einem Fitness-Wettkampf, vermutlich einem Hyrox-Event, befinden. Im Vordergrund ist eine große digitale Anzeigetafel zu sehen, die die aktuellen Ergebnisse anzeigt.">
             </div>
-            <div>
-                <div class="container">
-                    <div>
-                        <h1>HYROX</h1>
-                    </div>
-                    <div>
-                        <p1>Alles rund um Hyrox</p1>
-                    </div>
-                </div>
+            <div class="container">
+                <h1 id="main-heading">HYROX</h1>
+                <p>Alles rund um Hyrox</p>
             </div>
             <div>
                 <img class="header-image" src="images/image1.jpg" id="bild01"
@@ -31,33 +25,35 @@
             </div>
         </div>
     </header>
-    <main>
-        <nav class="navbar">
+    <main role="main">
+        <nav class="navbar" role="navigation" aria-label="Hauptnavigation">
             <div class="flex-container5 logo">
-                <div>
-                    <ul class="horizontal-menu nav-links" id="navLinks">
-                        <li> <a href="index.html"> Homepage</a></li>
-                        <li> <a href="details.html"> Hyrox-Details </a></li>
-                        <li> <a href="weg.html"> Der Weg</a></li>
-                        <li> <a href="vorbereitungen.html"> Vorbereitung </a></li>
-                        <li> <a href="ernaehrung.html"> Ernährung </a></li>
-                        <li>
-                            <form action="#"> <input type="search" name="suche" placeholder="Suche" class="search-bar">
-                            </form>
-                        </li>
-                    </ul>
-                </div>
-                <div class="hamburger" id="hamburger">
+                <ul class="horizontal-menu nav-links" id="navLinks" aria-labelledby="main-heading">
+                    <li> <a href="index.html">Homepage</a></li>
+                    <li> <a href="details.html">Hyrox-Details</a></li>
+                    <li> <a href="weg.html">Der Weg</a></li>
+                    <li> <a href="vorbereitungen.html">Vorbereitung</a></li>
+                    <li> <a href="ernaehrung.html">Ernährung</a></li>
+                    <li>
+                        <form action="#"> <input type="search" name="suche" placeholder="Suche" class="search-bar"
+                                aria-label="Suche">
+                        </form>
+                    </li>
+                </ul>
+                <button class="hamburger" id="hamburger" aria-label="Menü umschalten" aria-expanded="false"
+                    aria-controls="navLinks">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </div>
         </nav>
-        <article>
+
+            <article aria-labelledby="intro">
+                <section aria-labelledby="section-wie-hyrox">
             <div class="container-weg">
                 <div>
-                    <h2 class="text underline"> Wie kam ich zum Hyrox Sport?</h2>
+                    <h2 id="section-wie-hyrox" class="text underline"> Wie kam ich zum Hyrox Sport?</h2>
                     <p class="text">Schon als Kind war der Sport ein zentraler Bestandteil meines Lebens. Ich habe viele
                         Jahre Leichtathletik betrieben und dabei nicht nur meine Ausdauer beim Laufen gestärkt, sondern
                         auch Kraft aufgebaut. Parallel dazu habe ich eine große Leidenschaft für Pferde entwickelt und
@@ -86,10 +82,12 @@
                         alt="Das Bild zeigt eine Frau, die Erstellerin dieser Webseite, welche in Sportklamotten zum Joggen und einer Jacke mit Trinken vor einem Spiegel in einer Wohnung steht und ein Foto macht.">
                 </div>
             </div>
+            </section>
 
+            <section aria-labelledby="section-aktuelles-training">
             <div class="container-weg">
                 <div>
-                    <h3 class="text underline"> Mein aktuelles Training</h3>
+                    <h3 class="text underline" id="section-aktuelles-training"> Mein aktuelles Training</h3>
                     <p class="text">Aktuell steckt mein Training voll in der Hyrox-Vorbereitung, und es fordert mich auf
                         allen Ebenen – körperlich und mental. Hyrox ist eine Kombination aus Kraft, Ausdauer und
                         funktionellem Training, was bedeutet, dass jeder Tag anders ist und mich neue Herausforderungen
@@ -119,10 +117,12 @@
                     <p class="fett zentrieren">Bonnie Lohnman</p>
                 </div>
             </div>
+            </section>
 
+            <section class="container-weg" aria-labelledby="section-team-motivation">
             <div class="container-weg">
                 <div>
-                    <h3 class="text underline">Ein weiterer Bautstein meiner Motivation</h3>
+                    <h3 id="section-team-motivation" class="text underline">Ein weiterer Bautstein meiner Motivation</h3>
                     <p class="text">Eine weitere große Motivation für mich ist definitiv das Team. Die Gruppe, mit der
                         ich trainiere, ist etwas ganz Besonderes. Jeder von uns hat das gleiche Ziel: stärker, schneller
                         und besser zu werden, um im Hyrox-Wettkampf zu glänzen. Der Zusammenhalt in der Gruppe gibt mir
@@ -148,11 +148,12 @@
                     <p class="fett zentrieren">Olympiade im Trainingslager</p>
                 </div>
             </div>
+            </section>
 
-
+            <section class="container-weg" aria-labelledby="section-inspiration">
             <div class="container-weg">
                 <div>
-                    <h3 class="text underline"> Meine Inspirationen zusammengefasst</h3>
+                    <h3 id="section-inspiration" class="text underline"> Meine Inspirationen zusammengefasst</h3>
                     <p class="text">Meine Inspirationen für Hyrox kommen aus verschiedenen Quellen, die mich täglich
                         antreiben, mein Bestes zu geben und mich immer weiter zu verbessern.
                         An erster Stelle steht meine Trainerin Bonnie Lohmann. Sie hat mir nicht nur den Weg in den
@@ -181,17 +182,18 @@
                     <p class="fett zentrieren">Zeit meines ersten Halbmarathons</p>
                 </div>
             </div>
-
+        </section>
         </article>
     </main>
-    <footer>
+    <footer role="contentinfo">
         <div class="flex-container6">
-            <ul>
-                <a href="index.html" class="footer-link">Datenschutz</a>
-                <a href="index.html" class="footer-link">Impressum</a>
+            <ul class="footer-links" role="list" aria-label="Footer Navigation">
+                <li><a href="index.html" class="footer-link">Datenschutz</a></li>
+                <li><a href="index.html" class="footer-link">Impressum</a></li>
             </ul>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 

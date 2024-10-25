@@ -186,6 +186,14 @@ a:focus {
     color: #03080c;
 }
 
+.footer-links {
+    list-style-type: none; /* Entfernt Aufzählungszeichen */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Setzt die Links nebeneinander */
+    gap: 20px; /* Fügt optional Abstand zwischen den Links hinzu */
+}
+
 .footer-link:hover, /*Links ändern die Farbe wenn die Maus darüber fährt*/
 .footer-link:focus {
   color:  rgb(73, 111, 148);
