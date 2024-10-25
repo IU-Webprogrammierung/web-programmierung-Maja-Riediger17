@@ -9,21 +9,15 @@
 </head>
 
 <body>
-    <header>
+    <header role="banner">
         <div class="flex-container">
             <div>
                 <img class="header-image2" src="images/image1.jpg" id="bild1"
                     alt="Das Bild zeigt eine große Sporthalle mit vielen Teilnehmern und Zuschauern, die sich auf einem Fitness-Wettkampf, vermutlich einem Hyrox-Event, befinden. Im Vordergrund ist eine große digitale Anzeigetafel zu sehen, die die aktuellen Ergebnisse anzeigt.">
             </div>
-            <div>
-                <div class="container">
-                    <div>
-                        <h1>HYROX</h1>
-                    </div>
-                    <div>
-                        <p1>Alles rund um Hyrox</p1>
-                    </div>
-                </div>
+            <div class="container">
+                <h1 id="main-heading">HYROX</h1>
+                <p>Alles rund um Hyrox</p>
             </div>
             <div>
                 <img class="header-image" src="images/image1.jpg" id="bild01"
@@ -31,27 +25,27 @@
             </div>
         </div>
     </header>
-    <main>
-        <nav class="navbar">
+    <main role="main">
+        <nav class="navbar" role="navigation" aria-label="Hauptnavigation">
             <div class="flex-container5 logo">
-                <div>
-                    <ul class="horizontal-menu nav-links" id="navLinks">
-                        <li> <a href="index.html"> Homepage</a></li>
-                        <li> <a href="details.html"> Hyrox-Details </a></li>
-                        <li> <a href="weg.html"> Der Weg</a></li>
-                        <li> <a href="vorbereitungen.html"> Vorbereitung </a></li>
-                        <li> <a href="ernaehrung.html"> Ernährung </a></li>
-                        <li>
-                            <form action="#"> <input type="search" name="suche" placeholder="Suche" class="search-bar">
-                            </form>
-                        </li>
-                    </ul>
-                </div>
-                <div class="hamburger" id="hamburger">
+                <ul class="horizontal-menu nav-links" id="navLinks" aria-labelledby="main-heading">
+                    <li role="menuitem"><a href="index.html">Homepage</a></li>
+                    <li role="menuitem"><a href="details.html">Hyrox-Details</a></li>
+                    <li role="menuitem"><a href="weg.html">Der Weg</a></li>
+                    <li role="menuitem"><a href="vorbereitungen.html">Vorbereitung</a></li>
+                    <li role="menuitem"><a href="ernaehrung.html">Ernährung</a></li>
+                    <li>
+                        <form action="#"> <input type="search" name="suche" placeholder="Suche" class="search-bar"
+                                aria-label="Suche">
+                        </form>
+                    </li>
+                </ul>
+                <button class="hamburger" id="hamburger" aria-label="Menü umschalten" aria-expanded="false"
+                    aria-controls="navLinks">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </div>
         </nav>
         <article>
@@ -260,14 +254,15 @@
             </div>
         </article>
     </main>
-    <footer>
+    <footer role="contentinfo">
         <div class="flex-container6">
-            <ul>
-                <a href="index.html" class="footer-link">Datenschutz</a>
-                <a href="index.html" class="footer-link">Impressum</a>
+            <ul class="footer-links" role="list" aria-label="Footer Navigation">
+                <li><a href="index.html" class="footer-link">Datenschutz</a></li>
+                <li><a href="index.html" class="footer-link">Impressum</a></li>
             </ul>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 
