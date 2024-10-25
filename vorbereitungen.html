@@ -195,11 +195,10 @@
                     </div>
                 </div>
             </section>
-
         </article>
         <article>
-            <h2 class="text underline abstand"> Beispiel Trainingsplan für 8 Wochen</h2>
-            <p class="text">In den ersten 4 Wochen liegt der Fokus aus der Verbesserung der Grundlagenausdauer, dem
+            <h2 id="beispiel-trainingsplan" class="text underline abstand" role="heading" aria-level="2">Beispiel Trainingsplan für 8 Wochen</h2>
+            <p class="text" role="region" aria-labelledby="beispiel-trainingsplan">In den ersten 4 Wochen liegt der Fokus aus der Verbesserung der Grundlagenausdauer, dem
                 Krafttraining und der Einführung in die Hyrox-Übungen. Hierbie sollen 4 Tage die Woche trainiert werden
                 á 4 Wochen.
                 In Woche 5-8 kommt es zur Intensivierung, das heißt spezifisches Hyrox-Training, längere Distanzen und
@@ -208,162 +207,166 @@
                 lohnt es sich, die Workouts auf Instagramm zu nehmen. Vorher sind diese für Anfänger deutlich zu schwer.
             </p>
 
-            <div class="header-box">
-                <h3 class="ueberschrift">Trainingsplan Woche 1-4</h3>
-            </div>
+            <section>
+                <div class="header-box" role="banner" aria-labelledby="wochenplan-1-4">
+                    <h3 id="wochenplan-1-4" class="ueberschrift">Trainingsplan Woche 1-4</h3>
+                </div>
 
-            <div class="scrollen">
-                <table class="training-plan">
-                    <thead>
-                        <tr>
-                            <th> Tag 1</th>
-                            <th> Tag 2</th>
-                            <th> Tag 3</th>
-                            <th> Tag 4</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h4 class="underline">Ausdauer und Kraft (60-75min)</h4>
-                                <strong>Laufen:</strong>
-                                <ul>
-                                    <li>5km lockerer Lauf</li>
-                                </ul>
-                                <strong>Krafttraining (Zirzkel 3x):</strong>
-                                <ul>
-                                    <li>Kniebeugen mit Langhantel: 3x12 Wiederholungen</li>
-                                    <li>Sled Push (leichtes Gewicht): 20 Meter x 3 Sets</li>
-                                    <li>Sled Pull (leichtes Gewicht): 20 Meter x 3 Sets</li>
-                                    <li>Kettlebell Swings: 3x12 Wiederholungen</li>
-                                </ul>
-                            </td>
-                            <td>
-                                <h4 class="underline">Hyrox-Simulation moderat (75 Minuten)</h4>
-                                <strong>Laufen (Intervalltraining):</strong>
-                                <ul>
-                                    <li>6x 400 Meter im moderaten Tempo, 1 Minute Pause dazwischen.</li>
-                                </ul>
-                                <strong>Übung nach jedem Laufintervall (4-6 Runden):</strong>
-                                <ul>
-                                    <li>10 Burpee broad jumps</li>
-                                    <li>200 Meter Rudern </li>
-                                    <li>10 Sandbag Lunges (mit leichtem Gewicht) </li>
-                                </ul>
-                            </td>
-                            <td>
-                                <h4 class="underline">Krafttraining (60 Minuten)</h4>
-                                <strong>Kniebeugen mit Langhantel</strong>
-                                <ul>
-                                    <li>4x8 Wiederholungen: </li>
-                                </ul>
-                                <strong>Kreuzheben:</strong>
-                                <ul>
-                                    <li>4x8 Wiederholungen (schweres Gewicht)</li>
-                                </ul>
-                                <strong>Famers Walk:</strong>
-                                <ul>
-                                    <li>3 Sätze à 100 Meter mit 2 Kettlebells (16 kg für Frauen / 24 kg für Männer)
-                                    </li>
-                                </ul>
-                                <strong>Wall Balls:</strong>
-                                <ul>
-                                    <li>4x15 Wiederholungen</li>
-                                </ul>
-                            </td>
-                            <td>
-                                <h4 class="underline">Ausdauer und Mobility (50 Minuten)</h4>
-                                <strong>Laufen:</strong>
-                                <ul>
-                                    <li>7-8 km in lockerem Tempo</li>
-                                </ul>
-                                <strong>Mobility-Übungen (15 Minuten):</strong>
-                                <ul>
-                                    <li>Fokus auf Schultern, Rumpf und Hüftbeweglichkeit</li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                <div class="scrollen" role="region" aria-labelledby="wochenplan-1-4" tabindex="0">
+                    <table class="training-plan" role="table">
+                        <thead role="rowgroup">
+                            <tr role="row">
+                                <th scope="col">Tag 1</th>
+                                <th scope="col">Tag 2</th>
+                                <th scope="col">Tag 3</th>
+                                <th scope="col">Tag 4</th>
+                            </tr>
+                        </thead>
+                        <tbody role="rowgroup">
+                            <tr role="row">
+                                <td role="cell">
+                                    <h4 class="underline">Ausdauer und Kraft (60-75min)</h4>
+                                    <p><strong>Laufen:</strong></p>
+                                    <ul>
+                                        <li>5km lockerer Lauf</li>
+                                    </ul>
+                                    <p><strong>Krafttraining (Zirkel 3x):</strong></p>
+                                    <ul>
+                                        <li>Kniebeugen mit Langhantel: 3x12 Wiederholungen</li>
+                                        <li>Sled Push (leichtes Gewicht): 20 Meter x 3 Sets</li>
+                                        <li>Sled Pull (leichtes Gewicht): 20 Meter x 3 Sets</li>
+                                        <li>Kettlebell Swings: 3x12 Wiederholungen</li>
+                                    </ul>
+                                </td>
+                                <td role="cell">
+                                    <h4 class="underline">Hyrox-Simulation moderat (75 Minuten)</h4>
+                                    <p><strong>Laufen (Intervalltraining):</strong></p>
+                                    <ul>
+                                        <li>6x 400 Meter im moderaten Tempo, 1 Minute Pause dazwischen.</li>
+                                    </ul>
+                                    <p><strong>Übung nach jedem Laufintervall (4-6 Runden):</strong></p>
+                                    <ul>
+                                        <li>10 Burpee broad jumps</li>
+                                        <li>200 Meter Rudern</li>
+                                        <li>10 Sandbag Lunges (mit leichtem Gewicht)</li>
+                                    </ul>
+                                </td>
+                                <td role="cell">
+                                    <h4 class="underline">Krafttraining (60 Minuten)</h4>
+                                    <p><strong>Kniebeugen mit Langhantel</strong></p>
+                                    <ul>
+                                        <li>4x8 Wiederholungen</li>
+                                    </ul>
+                                    <p><strong>Kreuzheben:</strong></p>
+                                    <ul>
+                                        <li>4x8 Wiederholungen (schweres Gewicht)</li>
+                                    </ul>
+                                    <p><strong>Famers Walk:</strong></p>
+                                    <ul>
+                                        <li>3 Sätze à 100 Meter mit 2 Kettlebells (16 kg für Frauen / 24 kg für Männer)
+                                        </li>
+                                    </ul>
+                                    <p><strong>Wall Balls:</strong></p>
+                                    <ul>
+                                        <li>4x15 Wiederholungen</li>
+                                    </ul>
+                                </td>
+                                <td role="cell">
+                                    <h4 class="underline">Ausdauer und Mobility (50 Minuten)</h4>
+                                    <p><strong>Laufen:</strong></p>
+                                    <ul>
+                                        <li>7-8 km in lockerem Tempo</li>
+                                    </ul>
+                                    <p><strong>Mobility-Übungen (15 Minuten):</strong></p>
+                                    <ul>
+                                        <li>Fokus auf Schultern, Rumpf und Hüftbeweglichkeit</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section>
 
-            <div class="header-box">
-                <h3 class="ueberschrift">Trainingsplan Woche 5-8</h3>
-            </div>
+                <div class="header-box" role="banner" aria-labelledby="wochenplan-5-8">
+                    <h3 id="wochenplan-5-8" class="ueberschrift">Trainingsplan Woche 5-8</h3>
+                </div>
 
-            <div class="scrollen">
-                <table class="training-plan">
-                    <thead>
-                        <tr>
-                            <th>Tag 1</th>
-                            <th>Tag 2</th>
-                            <th>Tag 3</th>
-                            <th>Tag 4</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h4 class="underline">Ausdauer und Kraft (60-75min)</h4>
-                                <strong>Laufen:</strong>
-                                <ul>
-                                    <li>6 km, davon 3 km in moderatem bis schnellen Tempo</li>
-                                </ul>
-                                <strong>Krafttraining (Zirkel 4x):</strong>
-                                <ul>
-                                    <li>Kniebeugen mit Langhantel: 4x8 Wiederholungen</li>
-                                    <li>Sled Push (mittleres Gewicht): 25 Meter x 4 Sets</li>
-                                    <li>Sled Pull (mittleres Gewicht): 25 Meter x 4 Sets</li>
-                                    <li>Kettlebell Swings: 4x12 Wiederholungen</li>
-                                </ul>
-                            </td>
-                            <td>
-                                <h4 class="underline">Hyrox-Simulation moderat (75 Minuten)</h4>
-                                <strong>Laufen:</strong>
-                                <ul>
-                                    <li>4x 800 Meter im moderaten Tempo, 90 Sekunden Pause dazwischen.</li>
-                                </ul>
-                                <strong>Übung nach jedem Laufintervall (3-4 Runden):</strong>
-                                <ul>
-                                    <li>15 Burpee broad jumps</li>
-                                    <li>500 Meter Rudern</li>
-                                    <li>10 Sandbag Lunges (mit moderatem Gewicht)</li>
-                                </ul>
-                            </td>
-                            <td>
-                                <h4 class="underline">Krafttraining (60 Minuten)</h4>
-                                <strong>Kniebeugen mit Langhantel:</strong>
-                                <ul>
-                                    <li>4x6 Wiederholungen (schweres Gewicht)</li>
-                                </ul>
-                                <strong>Kreuzheben:</strong>
-                                <ul>
-                                    <li> 4x6 Wiederholungen (schweres Gewicht)</li>
-                                </ul>
-                                <strong>Famers Walk:</strong>
-                                <ul>
-                                    <li>3 Sätze à 150 Meter mit 2 Kettlebells</li>
-                                </ul>
-                                <strong>Wall Balls:</strong>
-                                <ul>
-                                    <li>4x20 Wiederholungen</li>
-                                </ul>
-                            </td>
-                            <td>
-                                <h4 class="underline">Ausdauer und Mobility (50 Minuten)</h4>
-                                <strong>Laufen:</strong>
-                                <ul>
-                                    <li> 7-8 km im moderaten Tempo</li>
-                                </ul>
-                                <strong>Mobility-Übungen (15 Minuten):</strong>
-                                <ul>
-                                    <li> Fokus auf Schultern, Rumpf und Hüftbeweglichkeit</li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                <div class="scrollen" role="region" aria-labelledby="wochenplan-5-8" tabindex="0">
+                    <table class="training-plan" role="table">
+                        <thead role="rowgroup">
+                            <tr role="row">
+                                <th scope="col">Tag 1</th>
+                                <th scope="col">Tag 2</th>
+                                <th scope="col">Tag 3</th>
+                                <th scope="col">Tag 4</th>
+                            </tr>
+                        </thead>
+                        <tbody role="rowgroup">
+                            <tr role="row">
+                                <td role="cell">
+                                    <h4 class="underline">Ausdauer und Kraft (60-75min)</h4>
+                                    <p><strong>Laufen:</strong></p>
+                                    <ul>
+                                        <li>6 km, davon 3 km in moderatem bis schnellen Tempo</li>
+                                    </ul>
+                                    <p><strong>Krafttraining (Zirkel 4x):</strong></p>
+                                    <ul>
+                                        <li>Kniebeugen mit Langhantel: 4x8 Wiederholungen</li>
+                                        <li>Sled Push (mittleres Gewicht): 25 Meter x 4 Sets</li>
+                                        <li>Sled Pull (mittleres Gewicht): 25 Meter x 4 Sets</li>
+                                        <li>Kettlebell Swings: 4x12 Wiederholungen</li>
+                                    </ul>
+                                </td>
+                                <td role="cell">
+                                    <h4 class="underline">Hyrox-Simulation moderat (75 Minuten)</h4>
+                                    <p><strong>Laufen:</strong></p>
+                                    <ul>
+                                        <li>4x 800 Meter im moderaten Tempo, 90 Sekunden Pause dazwischen.</li>
+                                    </ul>
+                                    <p><strong>Übung nach jedem Laufintervall (3-4 Runden):</strong></p>
+                                    <ul>
+                                        <li>15 Burpee broad jumps</li>
+                                        <li>500 Meter Rudern</li>
+                                        <li>10 Sandbag Lunges (mit moderatem Gewicht)</li>
+                                    </ul>
+                                </td>
+                                <td role="cell">
+                                    <h4 class="underline">Krafttraining (60 Minuten)</h4>
+                                    <p><strong>Kniebeugen mit Langhantel:</strong></p>
+                                    <ul>
+                                        <li>4x6 Wiederholungen (schweres Gewicht)</li>
+                                    </ul>
+                                    <p><strong>Kreuzheben:</strong></p>
+                                    <ul>
+                                        <li>4x6 Wiederholungen (schweres Gewicht)</li>
+                                    </ul>
+                                    <p><strong>Famers Walk:</strong></p>
+                                    <ul>
+                                        <li>3 Sätze à 150 Meter mit 2 Kettlebells</li>
+                                    </ul>
+                                    <p><strong>Wall Balls:</strong></p>
+                                    <ul>
+                                        <li>4x20 Wiederholungen</li>
+                                    </ul>
+                                </td>
+                                <td role="cell">
+                                    <h4 class="underline">Ausdauer und Mobility (50 Minuten)</h4>
+                                    <p><strong>Laufen:</strong></p>
+                                    <ul>
+                                        <li>7-8 km im moderaten Tempo</li>
+                                    </ul>
+                                    <p><strong>Mobility-Übungen (15 Minuten):</strong></p>
+                                    <ul>
+                                        <li>Fokus auf Schultern, Rumpf und Hüftbeweglichkeit</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
         </article>
 
         <article>
