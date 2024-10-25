@@ -1,11 +1,13 @@
-h1 { /*Überschrift oben*/
+h1 {
+    /*Überschrift oben*/
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
     font-size: 3rem;
     color: #03080c;
-    margin-bottom:4px
+    margin-bottom: 4px
 }
 
-p1 { /*Unterüberschrift*/
+p1 {
+    /*Unterüberschrift*/
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
     font-size: 1.5rem;
     color: #03080c;
@@ -15,6 +17,7 @@ p1 { /*Unterüberschrift*/
     max-width: auto;
     max-height: 200px;
 }
+
 #bild01 {
     max-width: auto;
     max-height: 200px;
@@ -23,36 +26,45 @@ p1 { /*Unterüberschrift*/
 
 /*Überschrift in Flexbox*/
 .container {
-    text-align: center;  /* Zentriert den Text horizontal */
+    text-align: center;
+    /* Zentriert den Text horizontal */
 }
 
-nav ul li a { /* Links im Header*/
+nav ul li a {
+    /* Links im Header*/
     color: #0f6686;
     font-size: 1.2rem;
-    padding: 5px 10px; 
-    margin-right: 20px; 
+    padding: 5px 10px;
+    margin-right: 20px;
 }
 
-nav ul li a:hover, /*Links im Header*/
+nav ul li a:hover,
+/*Links im Header*/
 nav ul li a:focus {
-  color: #5acdf7; 
+    color: #5acdf7;
 }
 
-.search-bar { /*Suchleiste Design*/
-    width: 200px;              /* Breite */
-    padding: 5px 10px;         /* Abstand zwischen Text und Rand*/
-    border: 2px solid #03080c; /* Rahmenfarbe und -breite */
-    border-radius: 15px;       /* Abgerundete Ecken */
-    font-size: 16px;           /* Schriftgröße */
-    outline: none;    
-        }      
-   
+.search-bar {
+    /*Suchleiste Design*/
+    width: 200px;
+    /* Breite */
+    padding: 5px 10px;
+    /* Abstand zwischen Text und Rand*/
+    border: 2px solid #03080c;
+    /* Rahmenfarbe und -breite */
+    border-radius: 15px;
+    /* Abgerundete Ecken */
+    font-size: 16px;
+    /* Schriftgröße */
+    outline: none;
+}
+
 .search-bar:hover {
-    border-color: #1ca1d1;  
+    border-color: #1ca1d1;
 }
 
 .search-bar:focus {
-    border-color: #1abc9c;     
+    border-color: #1abc9c;
 }
 
 /* Zentrierung der Suchleiste */
@@ -64,15 +76,18 @@ form {
 
 /*Flexbox für das Menü*/
 .flex-container5 {
-    display: flex; /* Flexbox aktivieren */
-    justify-content: center; /* Verteilung des Inhalts */
-    align-items: center; /* Vertikale Zentrierung */
+    display: flex;
+    /* Flexbox aktivieren */
+    justify-content: center;
+    /* Verteilung des Inhalts */
+    align-items: center;
+    /* Vertikale Zentrierung */
     gap: 10px;
     padding: 10px 10px;
     background-color: #cbf4fe;
     margin: 0;
     margin-bottom: 80px;
-} 
+}
 
 .horizontal-menu {
     list-style-type: none;
@@ -81,17 +96,23 @@ form {
 }
 
 /* Listenelemente horizontal */
-.horizontal-menu li, li form {
+.horizontal-menu li,
+li form {
     display: inline-block;
-    margin-right: 20px; /* Abstand zwischen den Links */
+    margin-right: 20px;
+    /* Abstand zwischen den Links */
 }
 
 /*Seitenanfang*/
 .flex-container {
-    display: flex; /* Flexbox aktivieren */
-    justify-content: space-between; /* Verteilung des Inhalts */
-    align-items: start; /* Vertikale Zentrierung */
-    background: linear-gradient(to bottom right , #c9dfe7, #1ca1d1);  /* Verlauf von hellblau nach mittelblau */
+    display: flex;
+    /* Flexbox aktivieren */
+    justify-content: space-between;
+    /* Verteilung des Inhalts */
+    align-items: start;
+    /* Vertikale Zentrierung */
+    background: linear-gradient(to bottom right, #c9dfe7, #1ca1d1);
+    /* Verlauf von hellblau nach mittelblau */
     padding: 20px;
     margin: 0;
     box-sizing: border-box;
@@ -100,25 +121,29 @@ form {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px; /*Schriftgröße */
-    line-height: 1.8; /* Zeilenabstand */
-    color: #333; /* Textfarbe */
+    font-size: 18px;
+    /*Schriftgröße */
+    line-height: 1.8;
+    /* Zeilenabstand */
+    color: #333;
+    /* Textfarbe */
     margin: 0;
     padding: 40px;
 }
 
 a {
     color: #2e5983;
-    padding: 5px 10px; 
-    margin-right: 20px; 
+    padding: 5px 10px;
+    margin-right: 20px;
 }
 
-a:hover, /*Links ändern die Farbe wenn die Maus darüber fährt*/
+a:hover,
+/*Links ändern die Farbe wenn die Maus darüber fährt*/
 a:focus {
-  color:  rgb(118, 181, 245);
+    color: rgb(118, 181, 245);
 }
 
-.zentrieren  {
+.zentrieren {
     text-align: center;
 }
 
@@ -128,7 +153,8 @@ a:focus {
 }
 
 .underline {
-    text-decoration: underline solid #2e5983; /* Unterstreicht die Überschriften */
+    text-decoration: underline solid #2e5983;
+    /* Unterstreicht die Überschriften */
 }
 
 .abstand {
@@ -136,43 +162,65 @@ a:focus {
 }
 
 .box {
-    display: flex;                       /* Aktiviert Flexbox */
-    justify-content: space-between;      /* Verteilt die Boxen mit Abstand */
-    gap: 30px;                           /* Abstand zwischen den Boxen */
-    padding: 10px;                       /* Innenabstand innerhalb des Containers */
+    display: flex;
+    /* Aktiviert Flexbox */
+    justify-content: space-between;
+    /* Verteilt die Boxen mit Abstand */
+    gap: 30px;
+    /* Abstand zwischen den Boxen */
+    padding: 10px;
+    /* Innenabstand innerhalb des Containers */
     width: 90%;
 }
 
-.box1, .box2, .box3 {
-    background-color: lightblue;        /* Hintergrundfarbe der Flexbox */
-    flex: 1;                             /* Beide Flexboxen bekommen gleiche Breite */
-    padding: 10px;                       /* Innenabstand innerhalb der Flexboxen */
-    text-align: center;                  /* Text zentrieren */
-    border-radius: 5px;                 /* Runde Ecken */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Ein leichter Schatten für Tiefe */
+.box1,
+.box2,
+.box3 {
+    background-color: lightblue;
+    /* Hintergrundfarbe der Flexbox */
+    flex: 1;
+    /* Beide Flexboxen bekommen gleiche Breite */
+    padding: 10px;
+    /* Innenabstand innerhalb der Flexboxen */
+    text-align: center;
+    /* Text zentrieren */
+    border-radius: 5px;
+    /* Runde Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ein leichter Schatten für Tiefe */
     list-style-type: none;
 }
 
 .header-box {
-    background-color: #cbf4fe;  /* Helles Blau als Hintergrund */
-    padding: 8px;              /* Innenabstand um die Überschrift */
-    text-align: center;         /* Überschrift mittig ausrichten */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Leichter Schatten */
-    max-width: 400px;           /* Maximale Breite der Box */
-    margin: 20px auto; 
-    margin-top: 50px;         /* Zentriert die Box auf der Seite */
+    background-color: #cbf4fe;
+    /* Helles Blau als Hintergrund */
+    padding: 8px;
+    /* Innenabstand um die Überschrift */
+    text-align: center;
+    /* Überschrift mittig ausrichten */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Leichter Schatten */
+    max-width: 400px;
+    /* Maximale Breite der Box */
+    margin: 20px auto;
+    margin-top: 50px;
+    /* Zentriert die Box auf der Seite */
 }
 
 .ueberschrift {
     font-family: 'Arial', sans-serif;
     font-size: 18px;
-    color: black;            /* Gleiche Farbe wie der Rand */
-    margin: 0;                 /* Entfernt Standardabstand der Überschrift */
+    color: black;
+    /* Gleiche Farbe wie der Rand */
+    margin: 0;
+    /* Entfernt Standardabstand der Überschrift */
 }
 
 .scrollen {
-    overflow-x: auto; /* Ermöglicht horizontales Scrollen */
-    -webkit-overflow-scrolling: touch; /* Für mobiles Scrollen */
+    overflow-x: auto;
+    /* Ermöglicht horizontales Scrollen */
+    -webkit-overflow-scrolling: touch;
+    /* Für mobiles Scrollen */
 }
 
 .training-plan {
@@ -181,70 +229,95 @@ a:focus {
     margin: 5px auto;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9; /* Dezenter Hintergrund */
-    border: 1px solid #ddd;    /* Helle Umrandung */
+    background-color: #f9f9f9;
+    /* Dezenter Hintergrund */
+    border: 1px solid #ddd;
+    /* Helle Umrandung */
     margin-top: 40px;
 }
 
 table {
     width: 100%;
-    border-collapse: collapse; /* Vermeidet doppelte Ränder */
-    min-width: 600px; /* Mindestens benötigte Breite der Tabelle */
+    border-collapse: collapse;
+    /* Vermeidet doppelte Ränder */
+    min-width: 600px;
+    /* Mindestens benötigte Breite der Tabelle */
 }
 
 .training-plan thead th {
-    background-color:  #cbf4fe;; /* Blauer Hintergrund für die Kopfzeile */
-    color: rgb(0, 0, 0);              /* Weiße Schrift für die Kopfzeile */
-    padding: 10px;             /* Innenabstand */
-    text-align: center;        /* Zentriert die Überschrift */
-    font-size: 18px;           /* Etwas größere Schrift */
+    background-color: #cbf4fe;
+    ;
+    /* Blauer Hintergrund für die Kopfzeile */
+    color: rgb(0, 0, 0);
+    /* Weiße Schrift für die Kopfzeile */
+    padding: 10px;
+    /* Innenabstand */
+    text-align: center;
+    /* Zentriert die Überschrift */
+    font-size: 18px;
+    /* Etwas größere Schrift */
 }
 
 .training-plan tbody td {
-    padding: 15px;             /* Innenabstand zu den Zellen */
-    border: 1px solid #ddd;    /* Dezente Linie zwischen den Zellen */
-    vertical-align: top;       /* Ausrichtung am oberen Rand */
-    background-color: #ffffff; /* Heller Hintergrund für die Tabelle */
-    font-size: 16px;           /* Angenehme Schriftgröße */
+    padding: 15px;
+    /* Innenabstand zu den Zellen */
+    border: 1px solid #ddd;
+    /* Dezente Linie zwischen den Zellen */
+    vertical-align: top;
+    /* Ausrichtung am oberen Rand */
+    background-color: #ffffff;
+    /* Heller Hintergrund für die Tabelle */
+    font-size: 16px;
+    /* Angenehme Schriftgröße */
 }
 
 .training-plan h4 {
-    margin: 0 0 10px 0;        /* Kein Abstand oben, 10px unten */
-    font-size: 18px;           /* Überschrift etwas größer */
-    color: #333;               /* Dunklere Schriftfarbe */
+    margin: 0 0 10px 0;
+    /* Kein Abstand oben, 10px unten */
+    font-size: 18px;
+    /* Überschrift etwas größer */
+    color: #333;
+    /* Dunklere Schriftfarbe */
 }
 
 
 .training-plan ul li {
-    margin: 5px 0;             /* Leichter Abstand zwischen den Listenelementen */
+    margin: 5px 0;
+    /* Leichter Abstand zwischen den Listenelementen */
 }
 
 .training-plan tbody tr:nth-child(even) {
-    background-color: #f0f8ff; /* Leicht alternierende Zeilenfarbe */
+    background-color: #f0f8ff;
+    /* Leicht alternierende Zeilenfarbe */
 }
 
 .training-plan th,
 .training-plan td {
-    width: 25%; /* Jede Spalte nimmt 25% der Gesamtbreite der Tabelle ein */
+    width: 25%;
+    /* Jede Spalte nimmt 25% der Gesamtbreite der Tabelle ein */
 }
 
 .container-vorbereitung {
-    display: flex; /* Flexbox aktivieren */
-    justify-content: space-between; /* Verteilung des Inhalts */
-    align-items: center; /* Vertikale Zentrierung */
+    display: flex;
+    /* Flexbox aktivieren */
+    justify-content: space-between;
+    /* Verteilung des Inhalts */
+    align-items: center;
+    /* Vertikale Zentrierung */
     padding-right: 25px;
     padding-left: 25px;
     margin-bottom: 30px;
     box-sizing: border-box;
-    gap: 20px; 
-    font-size: 19px; /*Schriftgröße */
+    gap: 20px;
+    font-size: 19px;
+    /*Schriftgröße */
     max-width: 100%
 }
 
-.item img{
+.item img {
     max-width: 400px;
     height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -252,25 +325,41 @@ table {
 
 /*Flexbox für den Footer*/
 .flex-container6 {
-    display: flex; /* Flexbox aktivieren */
-    justify-content: flex-end; /* Verteilung des Inhalts */
-    align-items: center; /* Vertikale Zentrierung */
-    height: 10vh; /* Höhe des Viewports */
-    background: linear-gradient(to bottom , #e9f1f4, #59b2d2);
+    display: flex;
+    /* Flexbox aktivieren */
+    justify-content: flex-end;
+    /* Verteilung des Inhalts */
+    align-items: center;
+    /* Vertikale Zentrierung */
+    height: 10vh;
+    /* Höhe des Viewports */
+    background: linear-gradient(to bottom, #e9f1f4, #59b2d2);
     padding: 20px;
     margin-top: 30px;
     box-sizing: border-box;
     gap: 20px;
-    text-align: center;  
+    text-align: center;
+}
+
+.footer-links {
+    list-style-type: none;
+    /* Entfernt Aufzählungszeichen */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* Setzt die Links nebeneinander */
+    gap: 20px;
+    /* Fügt optional Abstand zwischen den Links hinzu */
 }
 
 .footer-link {
     color: #03080c;
 }
 
-.footer-link:hover, /*Links ändern die Farbe wenn die Maus darüber fährt*/
+.footer-link:hover,
+/*Links ändern die Farbe wenn die Maus darüber fährt*/
 .footer-link:focus {
-  color:  rgb(73, 111, 148);
+    color: rgb(73, 111, 148);
 }
 
 /* Hamburger Menü (Standardmäßig versteckt) */
@@ -291,7 +380,8 @@ table {
 /* Menü auf kleineren Bildschirmen */
 @media (max-width: 1025px) {
     .nav-links {
-        display: none; /* Versteckt das Menü */
+        display: none;
+        /* Versteckt das Menü */
         position: absolute;
         top: 60px;
         right: 0;
@@ -308,11 +398,13 @@ table {
     }
 
     .hamburger {
-        display: flex; /* Zeigt das Hamburger-Icon */
+        display: flex;
+        /* Zeigt das Hamburger-Icon */
     }
 
     .nav-links.active {
-        display: flex; /* Zeigt das Menü bei Klick */
+        display: flex;
+        /* Zeigt das Menü bei Klick */
     }
 }
 
@@ -337,7 +429,11 @@ table {
         font-size: 1.2rem;
     }
 
-    .container-vorbereitung, .box, .box1, .box2, .box3 {
+    .container-vorbereitung,
+    .box,
+    .box1,
+    .box2,
+    .box3 {
         flex-direction: column;
     }
 
@@ -368,12 +464,15 @@ table {
 
 /* Media Queries für kleinere Bildschirme */
 @media (max-width: 543px) {
-    th, td {
+
+    th,
+    td {
         padding: 6px 8px;
         font-size: 14px;
     }
 
     table {
-        min-width: 400px; /* Setzt die minimale Breite der Tabelle bei kleinen Bildschirmen */
+        min-width: 400px;
+        /* Setzt die minimale Breite der Tabelle bei kleinen Bildschirmen */
     }
 }

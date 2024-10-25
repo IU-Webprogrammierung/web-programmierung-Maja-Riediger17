@@ -9,21 +9,15 @@
 </head>
 
 <body>
-    <header>
+    <header role="banner">
         <div class="flex-container">
             <div>
                 <img class="header-image2" src="images/image1.jpg" id="bild1"
                     alt="Das Bild zeigt eine große Sporthalle mit vielen Teilnehmern und Zuschauern, die sich auf einem Fitness-Wettkampf, vermutlich einem Hyrox-Event, befinden. Im Vordergrund ist eine große digitale Anzeigetafel zu sehen, die die aktuellen Ergebnisse anzeigt.">
             </div>
-            <div>
-                <div class="container">
-                    <div>
-                        <h1>HYROX</h1>
-                    </div>
-                    <div>
-                        <p1>Alles rund um Hyrox</p1>
-                    </div>
-                </div>
+            <div class="container">
+                <h1 id="main-heading">HYROX</h1>
+                <p>Alles rund um Hyrox</p>
             </div>
             <div>
                 <img class="header-image" src="images/image1.jpg" id="bild01"
@@ -31,31 +25,33 @@
             </div>
         </div>
     </header>
-    <main>
-        <nav class="navbar">
+    <main role="main">
+        <nav class="navbar" role="navigation" aria-label="Hauptnavigation">
             <div class="flex-container5 logo">
-                <div>
-                    <ul class="horizontal-menu nav-links" id="navLinks">
-                        <li> <a href="index.html"> Homepage</a></li>
-                        <li> <a href="details.html"> Hyrox-Details </a></li>
-                        <li> <a href="weg.html"> Der Weg</a></li>
-                        <li> <a href="vorbereitungen.html"> Vorbereitung </a></li>
-                        <li> <a href="ernaehrung.html"> Ernährung </a></li>
-                        <li>
-                            <form action="#"> <input type="search" name="suche" placeholder="Suche" class="search-bar">
-                            </form>
-                        </li>
-                    </ul>
-                </div>
-                <div class="hamburger" id="hamburger">
+                <ul class="horizontal-menu nav-links" id="navLinks" aria-labelledby="main-heading">
+                    <li> <a href="index.html">Homepage</a></li>
+                    <li> <a href="details.html">Hyrox-Details</a></li>
+                    <li> <a href="weg.html">Der Weg</a></li>
+                    <li> <a href="vorbereitungen.html">Vorbereitung</a></li>
+                    <li> <a href="ernaehrung.html">Ernährung</a></li>
+                    <li>
+                        <form action="#"> <input type="search" name="suche" placeholder="Suche" class="search-bar"
+                                aria-label="Suche">
+                        </form>
+                    </li>
+                </ul>
+                <button class="hamburger" id="hamburger" aria-label="Menü umschalten" aria-expanded="false"
+                    aria-controls="navLinks">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </div>
         </nav>
-        <article>
-            <h2 class="text underline"> Wie bereitet man sich gut auf den ersten Hyrox-Wettkampf vor?</h2>
+
+        <article role="article" aria-labelledby="article-title-1">
+            <h2 id="article-title-1" class="text underline">Wie bereitet man sich gut auf den ersten Hyrox-Wettkampf
+                vor?</h2>
             <div class="container-vorbereitung">
                 <div>
                     <p class="text"> Die Vorbereitung auf deinen ersten Hyrox-Wettkampf erfordert eine ausgewogene
@@ -76,107 +72,129 @@
             <h3 class="text underline abstand">1.Kombination auf Kraft- und Ausdauertraining</h3>
             <p class="fett start">Hyrox fordert von den Teilnehmern sowohl Ausdauer als auch Kraft. Deshalb ist es
                 entscheidend, beides regelmäßig zu trainieren. Ein Beispiel für eine Trainingswoche könnte sein: </p>
-            <div class="box text">
-                <div>
-                    <li class="box1"><strong>3-4 Ausdauereinheiten pro Woche</strong></li>
-                    <p class="zentrieren">Intervallläufe, lange Läufe, Sprints oder Läufe mit unterschiedlichen
-                        Geschwindigkeiten (Fartlek-Training) sind ideal, um die Laufform zu verbessern. Da Hyrox acht
-                        Kilometer Laufstrecke umfasst, sollte das Lauftraining ein zentraler Bestandteil des Plans sein.
-                    </p>
+            <section role="list">
+                <div class="box text">
+                    <div role="listitem">
+                        <li class="box1"><strong>3-4 Ausdauereinheiten pro Woche</strong></li>
+                        <p class="zentrieren">Intervallläufe, lange Läufe, Sprints oder Läufe mit unterschiedlichen
+                            Geschwindigkeiten (Fartlek-Training) sind ideal, um die Laufform zu verbessern. Da Hyrox
+                            acht
+                            Kilometer Laufstrecke umfasst, sollte das Lauftraining ein zentraler Bestandteil des Plans
+                            sein.</p>
+                    </div>
+                    <div role="listitem">
+                        <li class="box2"><strong> 2-3 Krafttrainingseinheiten</strong></li>
+                        <p class="zentrieren">Hier solltest du dich auf funktionelle Übungen wie Kniebeugen, Kreuzheben,
+                            Kettlebell-Übungen und komplexe Bewegungen konzentrieren. Es ist wichtig, Kraft in den
+                            Beinen,
+                            im Rumpf und im Oberkörper aufzubauen, um die Schlitten zu schieben/ziehen, Lunges zu
+                            meistern
+                            und Wall Balls effektiv zu absolvieren.</p>
+                    </div>
                 </div>
-                <div>
-                    <li class="box2"><strong> 2-3 Krafttrainingseinheiten</strong></li>
-                    <p class="zentrieren">Hier solltest du dich auf funktionelle Übungen wie Kniebeugen, Kreuzheben,
-                        Kettlebell-Übungen und komplexe Bewegungen konzentrieren. Es ist wichtig, Kraft in den Beinen,
-                        im Rumpf und im Oberkörper aufzubauen, um die Schlitten zu schieben/ziehen, Lunges zu meistern
-                        und Wall Balls effektiv zu absolvieren.</p>
-                </div>
-            </div>
+            </section>
 
 
             <h3 class="text underline abstand">2. Hyrox-spezifisches Training</h3>
             <p class="fett start">Um für den Wettkampf gewappnet zu sein, solltest du regelmäßig die spezifischen
                 Hyrox-Übungen trainieren. Das bedeutet, dass du auch im Training die Workouts simulierst, die im
                 Wettkampf verlangt werden: </p>
-            <div class="box text">
-                <div>
-                    <li class="box1"><strong>Schlitten schieben und ziehen</strong></li>
-                    <p class="zentrieren">Trainiere den Sled Push und Pull, um deine Bein- und Rumpfkraft zu steigern
-                        und dich mit der Technik vertraut zu machen. Da diese Station besonders kraftraubend ist,
-                        solltest du sicherstellen, dass du dich regelmäßig an das Gewicht gewöhnst.</p>
+            <section role="list">
+                <div class="box text">
+                    <div role="listitem">
+                        <li class="box1"><strong>Schlitten schieben und ziehen</strong></li>
+                        <p class="zentrieren">Trainiere den Sled Push und Pull, um deine Bein- und Rumpfkraft zu
+                            steigern
+                            und dich mit der Technik vertraut zu machen. Da diese Station besonders kraftraubend ist,
+                            solltest du sicherstellen, dass du dich regelmäßig an das Gewicht gewöhnst.</p>
+                    </div>
+                    <div role="listitem">
+                        <li class="box2"><strong>Wall Balls und Burpees</strong></li>
+                        <p class="zentrieren">Beide Übungen fordern Kraft, Ausdauer und Koordination. Übe sie in
+                            Intervallen, um deine Muskulatur und Lunge auf die hohe Wiederholungszahl vorzubereiten.</p>
+                    </div>
+                    <div>
+                        <li class="box3"><strong>SkiErg und Rudern</strong></li>
+                        <p class="zentrieren">Diese beiden Geräte findest du in fast jedem Fitnessstudio. Arbeite an
+                            deiner
+                            Technik und verbessere deine Zeit auf 1.000 Meter. Du kannst auch kürzere, intensivere
+                            Intervalle einbauen, um deine Leistung zu steigern.</p>
+                    </div>
                 </div>
-                <div>
-                    <li class="box2"><strong>Wall Balls und Burpees</strong></li>
-                    <p class="zentrieren">Beide Übungen fordern Kraft, Ausdauer und Koordination. Übe sie in
-                        Intervallen, um deine Muskulatur und Lunge auf die hohe Wiederholungszahl vorzubereiten.</p>
-                </div>
-                <div>
-                    <li class="box3"><strong>SkiErg und Rudern</strong></li>
-                    <p class="zentrieren">Diese beiden Geräte findest du in fast jedem Fitnessstudio. Arbeite an deiner
-                        Technik und verbessere deine Zeit auf 1.000 Meter. Du kannst auch kürzere, intensivere
-                        Intervalle einbauen, um deine Leistung zu steigern.</p>
-                </div>
-            </div>
+            </section>
 
 
             <h3 class="text underline abstand">3. Kombination von Laufen und Workouts (Hyrox Simulation)</h3>
             <p class="fett start">Ein wichtiger Teil der Vorbereitung besteht darin, deine Ausdauer und Kraft in
                 Kombination zu trainieren. In einem Hyrox-Wettkampf wechselst du ständig zwischen Laufen und
                 kraftintensiven Übungen, weshalb es sinnvoll ist, genau das zu simulieren: </p>
-            <div class="box text">
-                <div>
-                    <li class="box1"><strong>Lauf-Workout-Lauf</strong></li>
-                    <p class="zentrieren">Laufe 1 Kilometer und absolviere danach eine Hyrox-Übung wie Sled Push,
-                        Burpees oder Rudern. Wiederhole das mehrere Male, um deinen Körper an die Wechselbelastung zu
-                        gewöhnen.</p>
+            <section role="list">
+                <div class="box text">
+                    <div role="listitem">
+                        <li class="box1"><strong>Lauf-Workout-Lauf</strong></li>
+                        <p class="zentrieren">Laufe 1 Kilometer und absolviere danach eine Hyrox-Übung wie Sled Push,
+                            Burpees oder Rudern. Wiederhole das mehrere Male, um deinen Körper an die Wechselbelastung
+                            zu
+                            gewöhnen.</p>
+                    </div>
+                    <div role="listitem">
+                        <li class="box2"><strong>Wettkampfsimulation</strong></li>
+                        <p class="zentrieren"> Einmal pro Woche solltest du ein längeres Training machen, das dem
+                            Wettkampf
+                            nachempfunden ist, um die Belastung zu simulieren. Das könnte beispielsweise aus mehreren
+                            Sets
+                            von Laufen und funktionellen Übungen bestehen, die in einem Hyrox-ähnlichen Stil absolviert
+                            werden.</p>
+                    </div>
                 </div>
-                <div>
-                    <li class="box2"><strong>Wettkampfsimulation</strong></li>
-                    <p class="zentrieren"> Einmal pro Woche solltest du ein längeres Training machen, das dem Wettkampf
-                        nachempfunden ist, um die Belastung zu simulieren. Das könnte beispielsweise aus mehreren Sets
-                        von Laufen und funktionellen Übungen bestehen, die in einem Hyrox-ähnlichen Stil absolviert
-                        werden.</p>
-                </div>
-            </div>
+            </section>
 
 
             <h3 class="text underline abstand">4. Techniktraining</h3>
             <p class="fett start">Die richtige Technik kann den entscheidenden Unterschied machen, um im Wettkampf
                 effizient und schnell zu bleiben. Arbeite gezielt an: </p>
-            <div class="box text">
-                <div>
-                    <li class="box1"><strong>Effizienter SkiErg- und Ruder-Technik</strong></li>
-                    <p class="zentrieren">Hierbei ist es wichtig, Energie zu sparen und eine saubere Bewegungsausführung
-                        zu gewährleisten, um nicht zu schnell zu ermüden.</p>
+            <section role="list">
+                <div class="box text">
+                    <div role="listitem">
+                        <li class="box1"><strong>Effizienter SkiErg- und Ruder-Technik</strong></li>
+                        <p class="zentrieren">Hierbei ist es wichtig, Energie zu sparen und eine saubere
+                            Bewegungsausführung
+                            zu gewährleisten, um nicht zu schnell zu ermüden.</p>
+                    </div>
+                    <div>
+                        <li class="box2"><strong>Kraftvolle, aber kontrollierte Wall Balls</strong></li>
+                        <p class="zentrieren">Achte auf saubere Squats und kontrollierte Würfe, um den Rhythmus zu
+                            halten
+                            und deine Beine nicht zu früh zu erschöpfen.</p>
+                    </div>
+                    <div role="listitem">
+                        <li class="box3"><strong>Burpees mit Weitsprung</strong></li>
+                        <p class="zentrieren">Effiziente Burpees helfen dir, die Übung schneller zu absolvieren und
+                            dennoch
+                            genügend Energie zu sparen. </p>
+                    </div>
                 </div>
-                <div>
-                    <li class="box2"><strong>Kraftvolle, aber kontrollierte Wall Balls</strong></li>
-                    <p class="zentrieren">Achte auf saubere Squats und kontrollierte Würfe, um den Rhythmus zu halten
-                        und deine Beine nicht zu früh zu erschöpfen.</p>
-                </div>
-                <div>
-                    <li class="box3"><strong>Burpees mit Weitsprung</strong></li>
-                    <p class="zentrieren">Effiziente Burpees helfen dir, die Übung schneller zu absolvieren und dennoch
-                        genügend Energie zu sparen. </p>
-                </div>
-            </div>
+            </section>
 
 
             <h3 class="text underline abstand">5. Ernährung</h3>
             <p class="fett start">Die richtige Ernährung ist entscheidend, um Energie für das Training und den Wettkampf
                 zu liefern: </p>
-            <div class="box text">
-                <div>
-                    <li class="box1"><strong>Ausgewogene Mahlzeiten</strong></li>
-                    <p class="zentrieren">mit einer guten Mischung aus Kohlenhydraten, Proteinen und gesunden Fetten
-                        unterstützen deine Leistungsfähigkeit. </p>
+            <section role="list">
+                <div class="box text">
+                    <div role="listitem">
+                        <li class="box1"><strong>Ausgewogene Mahlzeiten</strong></li>
+                        <p class="zentrieren">mit einer guten Mischung aus Kohlenhydraten, Proteinen und gesunden Fetten
+                            unterstützen deine Leistungsfähigkeit. </p>
+                    </div>
+                    <div role="listitem">
+                        <li class="box2"><strong>Hydration</strong></li>
+                        <p class="zentrieren"> Achte darauf, ausreichend zu trinken, sowohl während des Trainings als
+                            auch
+                            am Wettkampftag selbst.</p>
+                    </div>
                 </div>
-                <div>
-                    <li class="box2"><strong>Hydration</strong></li>
-                    <p class="zentrieren"> Achte darauf, ausreichend zu trinken, sowohl während des Trainings als auch
-                        am Wettkampftag selbst.</p>
-                </div>
-            </div>
+            </section>
 
         </article>
         <article>
@@ -350,21 +368,22 @@
 
         <article>
             <h2 class="abstand text underline"> Social-Media-Kanäle mit guten Trainingsplänen zur Inspiration</h2>
-            <ol class="text">
+            <ol class="text" role="list" aria-label="Social Media Links">
                 <li><a href="https://www.instagram.com/hyroxworkouts?igsh=Ym52bjB3bmV5ajdp">Hyroxworkouts</a></li>
                 <li><a href="https://www.instagram.com/hyrox_wod?igsh=cDZqejBpZ3pvNzl2"> hyrox_wod</a></li>
                 <li><a href="https://www.instagram.com/hyrox.girls?igsh=bzRvc3BxYnNtNnl4"> hyroxgirls</a></li>
             </ol>
         </article>
     </main>
-    <footer>
+    <footer role="contentinfo">
         <div class="flex-container6">
-            <ul>
-                <a href="index.html" class="footer-link">Datenschutz</a>
-                <a href="index.html" class="footer-link">Impressum</a>
+            <ul class="footer-links" role="list" aria-label="Footer Navigation">
+                <li><a href="index.html" class="footer-link">Datenschutz</a></li>
+                <li><a href="index.html" class="footer-link">Impressum</a></li>
             </ul>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 
