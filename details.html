@@ -9,67 +9,61 @@
 </head>
 
 <body>
-    <header>
+    <header role="banner">
         <div class="flex-container">
             <div>
                 <img class="header-image2" src="images/image1.jpg" id="bild1"
                     alt="Das Bild zeigt eine große Sporthalle mit vielen Teilnehmern und Zuschauern, die sich auf einem Fitness-Wettkampf, vermutlich einem Hyrox-Event, befinden. Im Vordergrund ist eine große digitale Anzeigetafel zu sehen, die die aktuellen Ergebnisse anzeigt.">
             </div>
-            <div>
-                <div class="container">
-                    <div>
-                        <h1>HYROX</h1>
-                    </div>
-                    <div>
-                        <p1>Alles rund um Hyrox</p1>
-                    </div>
-                </div>
+            <div class="container">
+                <h1 id="main-heading">HYROX</h1>
+                <p>Alles rund um Hyrox</p>
             </div>
             <div>
                 <img class="header-image" src="images/image1.jpg" id="bild01"
-                    alt=" Das Bild zeigt eine große Sporthalle mit vielen Teilnehmern und Zuschauern, die sich auf einem Fitness-Wettkampf, vermutlich einem Hyrox-Event, befinden. Im Vordergrund ist eine große digitale Anzeigetafel zu sehen, die die aktuellen Ergebnisse anzeigt.">
+                    alt="Das Bild zeigt eine große Sporthalle mit vielen Teilnehmern und Zuschauern, die sich auf einem Fitness-Wettkampf, vermutlich einem Hyrox-Event, befinden. Im Vordergrund ist eine große digitale Anzeigetafel zu sehen, die die aktuellen Ergebnisse anzeigt.">
             </div>
         </div>
     </header>
-    <main>
-        <nav class="navbar">
+    <main role="main">
+        <nav class="navbar" role="navigation" aria-label="Hauptnavigation">
             <div class="flex-container5 logo">
-                <div>
-                    <ul class="horizontal-menu nav-links" id="navLinks">
-                        <li> <a href="index.html"> Homepage</a></li>
-                        <li> <a href="details.html"> Hyrox-Details </a></li>
-                        <li> <a href="weg.html"> Der Weg</a></li>
-                        <li> <a href="vorbereitungen.html"> Vorbereitung </a></li>
-                        <li> <a href="ernaehrung.html"> Ernährung </a></li>
-                        <li>
-                            <form action="#"> <input type="search" name="suche" placeholder="Suche" class="search-bar">
-                            </form>
-                        </li>
-                    </ul>
-                </div>
-                <div class="hamburger" id="hamburger">
+                <ul class="horizontal-menu nav-links" id="navLinks" aria-labelledby="main-heading">
+                    <li> <a href="index.html">Homepage</a></li>
+                    <li> <a href="details.html">Hyrox-Details</a></li>
+                    <li> <a href="weg.html">Der Weg</a></li>
+                    <li> <a href="vorbereitungen.html">Vorbereitung</a></li>
+                    <li> <a href="ernaehrung.html">Ernährung</a></li>
+                    <li>
+                        <form action="#"> <input type="search" name="suche" placeholder="Suche" class="search-bar"
+                                aria-label="Suche">
+                        </form>
+                    </li>
+                </ul>
+                <button class="hamburger" id="hamburger" aria-label="Menü umschalten" aria-expanded="false"
+                    aria-controls="navLinks">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </div>
         </nav>
-        <setion>
+        <section aria-labelledby="competition-heading">
             <div class="text">
-                <h2 class="underline">Wie läuft ein Hyrox Wettkampf ab?</h2>
+                <h2 id="competition-heading" class="underline">Wie läuft ein Hyrox Wettkampf ab?</h2>
                 <p>Der Wettkampf beginnt mit einem Kilometerlauf, gefolgt von einer funktionellen Workout-Station.
                     Dieser Ablauf wiederholt sich acht Mal: Laufen, Workout, Laufen, Workout – bis alle acht Stationen
                     absolviert sind.</p>
-                Hier sind die acht Stationen im Detail:
+                <p>Hier sind die acht Stationen im Detail:</p>
             </div>
 
             <div class="scrollen">
-                <table class="table-dezent">
+                <table class="table-dezent" role="table" aria-label="Details der Wettkampfstationen">
                     <thead>
                         <tr>
-                            <th>Disziplin</th>
-                            <th>Erklärung</th>
-                            <th>Bild</th>
+                            <th scope="col">Disziplin</th>
+                            <th scope="col">Erklärung</th>
+                            <th scope="col">Bild</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -186,15 +180,15 @@
                                                             Men: 6 kg Ball, 100 Wiederholungen, Zielhöhe 3,0 m
                                                             Men Pro: 9 kg Ball, 100 Wiederholungen, Zielhöhe 3,0 m.">
                 <h4> Die ausführlichen Regeln zu den Hyroxwettkämpfen und der genauen Ausführung der Übungen findest
-                    du<a href="https://hyrox.com/rulebook/">HIER!</a></h4>
+                    du <a href="https://hyrox.com/rulebook/" aria-label="Link zum Regelbuch">HIER!</a></h4>
             </div>
-        </setion>
+        </section>
     </main>
-    <footer>
+    <footer role="contentinfo">
         <div class="flex-container6">
-            <ul>
-                <a href="index.html" class="footer-link">Datenschutz</a>
-                <a href="index.html" class="footer-link">Impressum</a>
+            <ul aria-label="Rechtliches" class="footer-links">
+                <li><a href="index.html" class="footer-link">Datenschutz</a></li>
+                <li><a href="index.html" class="footer-link">Impressum</a></li>
             </ul>
         </div>
     </footer>
