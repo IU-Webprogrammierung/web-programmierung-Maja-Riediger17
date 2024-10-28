@@ -189,7 +189,7 @@ tbody td:first-child {
 }
 .table-dezent th:nth-child(2), .table-dezent td:nth-child(2) {
     width: 65%;                   /* Zweite Spalte ist 20% der Tabellenbreite */
-    text-align: center;
+    
 }
 
 .table-dezent td img {
@@ -200,11 +200,10 @@ tbody td:first-child {
 
 .text {
     margin: 20px;
-    font-weight: 600;
 }
 
-.underline {
-    text-decoration: underline solid #2e5983;; /* Unterstreicht die Überschriften */
+.text1 {
+    font-weight: 600;
 }
 
 img {

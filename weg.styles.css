@@ -163,10 +163,6 @@ a:focus {
     font-style: italic;
 }
 
-.underline {
-    text-decoration: underline solid #2e5983;; /* Unterstreicht die Überschriften */
-}
-
 
 /*Flexbox für den Footer*/
 .flex-container6 {

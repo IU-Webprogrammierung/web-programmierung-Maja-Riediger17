@@ -109,10 +109,6 @@ a:focus {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-.underline {
-    text-decoration: underline solid #2e5983;; /* Unterstreicht die Überschriften */
-}
-
 article {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px; 
