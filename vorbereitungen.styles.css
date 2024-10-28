@@ -373,7 +373,7 @@ table {
 }
 
 /* Menü auf kleineren Bildschirmen */
-@media (max-width: 1025px) {
+@media (max-width: 768px) {
     .nav-links {
         display: none;
         /* Versteckt das Menü */
@@ -400,12 +400,6 @@ table {
     .nav-links.active {
         display: flex;
         /* Zeigt das Menü bei Klick */
-    }
-}
-
-@media (max-width: 1025px) {
-    .header-image {
-        display: none;
     }
 }
 
@@ -440,34 +434,10 @@ table {
     .search-bar {
         width: 100%;
     }
-}
 
-@media screen and (max-width: 400px) {
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    .container-vorbereitung {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .search-bar {
-        width: 100%;
+    .header-image {
+        display: none;
     }
 }
 
-/* Media Queries für kleinere Bildschirme */
-@media (max-width: 543px) {
 
-    th,
-    td {
-        padding: 6px 8px;
-        font-size: 14px;
-    }
-
-    table {
-        min-width: 400px;
-        /* Setzt die minimale Breite der Tabelle bei kleinen Bildschirmen */
-    }
-}

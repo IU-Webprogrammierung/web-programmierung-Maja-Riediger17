@@ -273,17 +273,3 @@ a:focus {
     }
 }
 
-@media screen and (max-width: 400px) {
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    .container-weg {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .search-bar {
-        width: 100%;
-    }
-}
