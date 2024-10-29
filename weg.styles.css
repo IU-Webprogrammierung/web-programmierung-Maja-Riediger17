@@ -98,6 +98,10 @@ form {
     gap: 20px;
 }
 
+.menu-item.active {
+    color: #000000; /* Beispiel für eine andere Farbe */
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px; /*Schriftgröße */

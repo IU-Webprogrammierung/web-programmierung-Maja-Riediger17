@@ -76,6 +76,10 @@ form {
     margin-bottom: 80px;
 } 
 
+.menu-item.active {
+    color: #000000; /* Beispiel für eine andere Farbe */
+}
+
 .horizontal-menu {
     list-style-type: none;
     padding: 0;
