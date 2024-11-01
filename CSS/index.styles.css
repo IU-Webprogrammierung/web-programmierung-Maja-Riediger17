@@ -1,12 +1,13 @@
-
-h1 { /*Überschrift oben*/
+h1 {
+    /*Überschrift oben*/
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
     font-size: 3rem;
     color: #03080c;
-    margin-bottom:4px
+    margin-bottom: 4px
 }
 
-p1 { /*Unterüberschrift*/
+p1 {
+    /*Unterüberschrift*/
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
     font-size: 1.5rem;
     color: #03080c;
@@ -14,36 +15,39 @@ p1 { /*Unterüberschrift*/
 
 /*Überschrift in Flexbox*/
 .container {
-    text-align: center;  
+    text-align: center;
 }
 
-nav ul li a { /* Links im Header*/
+nav ul li a {
+    /* Links im Header*/
     color: #0f6686;
     font-size: 1.2rem;
-    padding: 5px 10px; 
-    margin-right: 20px; 
+    padding: 5px 10px;
+    margin-right: 20px;
 }
 
-nav ul li a:hover, /*Links im Header*/
+nav ul li a:hover,
+/*Links im Header*/
 nav ul li a:focus {
-  color: #5acdf7; 
+    color: #5acdf7;
 }
 
-.search-bar { /*Suchleiste Design*/
-    width: 200px;              
-    padding: 5px 10px;         
-    border: 2px solid #03080c; 
-    border-radius: 15px;       
-    font-size: 16px;           
-    outline: none;    
-        }      
-   
+.search-bar {
+    /*Suchleiste Design*/
+    width: 200px;
+    padding: 5px 10px;
+    border: 2px solid #03080c;
+    border-radius: 15px;
+    font-size: 16px;
+    outline: none;
+}
+
 .search-bar:hover {
-    border-color: #1ca1d1;  
+    border-color: #1ca1d1;
 }
 
 .search-bar:focus {
-    border-color: #1abc9c;     
+    border-color: #1abc9c;
 }
 
 /* Zentrierung Suchleiste */
@@ -55,39 +59,41 @@ form {
 
 /*Flexbox für das Menü*/
 .flex-container5 {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     padding: 10px 10px;
     background-color: #cbf4fe;
     margin: 0;
     margin-bottom: 10px;
-} 
+}
 
 .menu-item.active {
-    color: #000000; /* Links andere Farbe bei Verwendung der Seite */
+    color: #000000;
+    /* Links andere Farbe bei Verwendung der Seite */
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px; 
-    line-height: 1.8; /* Zeilenabstand */
-    color: #333; 
+    font-size: 18px;
+    line-height: 1.8;
+    /* Zeilenabstand */
+    color: #333;
     margin: 0;
     padding: 40px;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 a {
     color: #2e5983;
-    padding: 5px 10px; 
-    margin-right: 20px; 
+    padding: 5px 10px;
+    margin-right: 20px;
 }
 
 a:hover,
 a:focus {
-  color:  rgb(118, 181, 245);
+    color: rgb(118, 181, 245);
 }
 
 #bild1 {
@@ -103,76 +109,79 @@ a:focus {
 #bild4 {
     max-width: 100%;
     height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #bild2 {
     max-width: 100%;
     height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 article {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px; 
-    line-height: 1.8; 
-    color: #333; 
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
     margin: 0;
     padding: 40px;
-    }
+}
 
-    table {
-        width: 100%; 
-        border-collapse: collapse; 
-        margin: 20px; 
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Schatten */
-        overflow: hidden; /* Überlauf weg*/
-    }
-    
-    /* Tabellenkopf Styling */
-    th {
-        background-color: #3498db; 
-        color: white; 
-        padding: 12px; 
-        text-align: left; 
-    }
-    
-    /* Tabellenzellen Styling */
-    td {
-        background-color: #ffffff; 
-        padding: 10px; 
-        border-bottom: 1px solid #dddddd; 
-    }
-    
-    /* Hover-Effekt für Zellen */
-    tr:hover {
-        background-color: #f1f1f1; 
-    }
-    
-    /* Letzte Zeile ohne unteren Rand */
-    tr:last-child td {
-        border-bottom: none; 
-    }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Schatten */
+    overflow: hidden;
+    /* Überlauf weg*/
+}
+
+/* Tabellenkopf Styling */
+th {
+    background-color: #3498db;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Tabellenzellen Styling */
+td {
+    background-color: #ffffff;
+    padding: 10px;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Hover-Effekt für Zellen */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Letzte Zeile ohne unteren Rand */
+tr:last-child td {
+    border-bottom: none;
+}
 
 /*Listen formatierung */
-article ul, ol{
-    padding: 0; 
-    margin: 20px 0; 
+article ul,
+ol {
+    padding: 0;
+    margin: 20px 0;
 }
 
 
 article li {
-    background-color:  #ffffff; 
-    padding: 15px; 
+    background-color: #ffffff;
+    padding: 15px;
     margin-bottom: 10px;
-    border-radius: 5px; 
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); 
-    transition: background-color 0.3s; 
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
 }
 
 /* Hover-Effekt für Listenelemente */
 article li:hover {
-    background-color: #e7f3fe; 
+    background-color: #e7f3fe;
 }
 
 .horizontal-menu {
@@ -182,19 +191,21 @@ article li:hover {
 }
 
 /* Listenelemente horizontal */
-.horizontal-menu li, li form {
+.horizontal-menu li,
+li form {
     display: inline-block;
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
 /*Seitenanfang*/
 .flex-container {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: start; 
-    background: linear-gradient(to bottom right , #c9dfe7, #1ca1d1);  /* Verlauf von hellblau nach mittelblau */
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    background: linear-gradient(to bottom right, #c9dfe7, #1ca1d1);
+    /* Verlauf von hellblau nach mittelblau */
     padding: 20px;
-    margin:0;
+    margin: 0;
     box-sizing: border-box;
     gap: 20px;
     flex-wrap: nowrap;
@@ -203,12 +214,12 @@ article li:hover {
 /*Flexbox für "Was ist Hyrox"*/
 .flex-container1 {
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
     margin-top: 30px;
     box-sizing: border-box;
-    gap: 20px; 
+    gap: 20px;
     font-size: 19px;
     max-width: 100%;
 }
@@ -216,84 +227,86 @@ article li:hover {
 
 /*Flexbox für "Wie kam ich zum Hyrox"*/
 .flex-container2 {
-    display: flex; 
-    justify-content: space-between; 
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
     margin-top: 5px;
     box-sizing: border-box;
-    gap: 20px; 
-    font-size: 19px; 
+    gap: 20px;
+    font-size: 19px;
     max-width: 100%;
 }
 
 /* Flexbox für die Tabellen und anschließende Formatierung*/
 .flex-container3 {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    background: linear-gradient(to bottom right , #e9f1f4, #59b2d2);
-    border-radius: 15px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #e9f1f4, #59b2d2);
+    border-radius: 15px;
     padding: 5px 10px 5px 10px;
     margin-top: 30px;
     box-sizing: border-box;
     gap: 20px;
-    text-align: center; 
+    text-align: center;
     max-width: 100%;
-    
+
 }
 
 .table {
-    max-width: 500px;                 
-    max-height: 200px;  
-    border-collapse: collapse;               
-    border: 1px solid #ccc;       
-    table-layout: fixed;               
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);        
+    max-width: 500px;
+    max-height: 200px;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    table-layout: fixed;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.table th, .table td {
-    border: 1px solid #ccc;      
-    padding: 10px;               
-    text-align: left;          
+.table th,
+.table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
 }
 
 .table {
-    overflow: hidden;            
+    overflow: hidden;
 }
 
 tbody td:first-child {
-    font-weight: bold;        
+    font-weight: bold;
 }
 
 /*Flexbox für den Footer*/
 .flex-container6 {
-    display: flex; 
+    display: flex;
     justify-content: flex-end;
-    align-items: center; 
-    background: linear-gradient(to bottom , #e9f1f4, #59b2d2);
+    align-items: center;
+    background: linear-gradient(to bottom, #e9f1f4, #59b2d2);
     padding: 20px;
     margin-top: 30px;
     box-sizing: border-box;
     gap: 20px;
-    text-align: center;  
+    text-align: center;
 }
 
 .footer-link {
-        color: #03080c;
+    color: #03080c;
 }
 
 .footer-links {
-    list-style-type: none; /* Entfernt Aufzählungszeichen */
+    list-style-type: none;
+    /* Entfernt Aufzählungszeichen */
     padding: 0;
     margin: 0;
-    display: flex; 
-    gap: 20px; 
+    display: flex;
+    gap: 20px;
 }
 
-.footer-link:hover, 
+.footer-link:hover,
 .footer-link:focus {
-  color:  rgb(73, 111, 148);
+    color: rgb(73, 111, 148);
 }
 
 
@@ -310,9 +323,12 @@ tbody td:first-child {
         font-size: 0.9rem;
     }
 
-    .flex-container1, .flex-container2, .flex-container3, .flex-container4 {
-        flex-direction: column; 
-        height: auto; 
+    .flex-container1,
+    .flex-container2,
+    .flex-container3,
+    .flex-container4 {
+        flex-direction: column;
+        height: auto;
     }
 
     .flex-container5 ul li {
@@ -360,7 +376,7 @@ tbody td:first-child {
 /* Menü auf allen Ipad Bildschirmen */
 @media (max-width: 768px) {
     .nav-links {
-        display: none; 
+        display: none;
         position: absolute;
         top: 60px;
         right: 0;
@@ -377,10 +393,12 @@ tbody td:first-child {
     }
 
     .hamburger {
-        display: flex; /* Zeigt das Hamburger-Icon */
+        display: flex;
+        /* Zeigt das Hamburger-Icon */
     }
 
     .nav-links.active {
-        display: flex; /* Zeigt das Menü bei Klick */
+        display: flex;
+        /* Zeigt das Menü bei Klick */
     }
 }

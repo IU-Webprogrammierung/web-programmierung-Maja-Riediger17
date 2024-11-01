@@ -1,11 +1,13 @@
-h1 { /*Überschrift oben*/
+h1 {
+    /*Überschrift oben*/
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
     font-size: 3rem;
     color: #03080c;
-    margin-bottom:4px
+    margin-bottom: 4px
 }
 
-p1 { /*Unterüberschrift*/
+p1 {
+    /*Unterüberschrift*/
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
     font-size: 1.5rem;
     color: #03080c;
@@ -23,36 +25,39 @@ p1 { /*Unterüberschrift*/
 
 /*Überschrift in Flexbox*/
 .container {
-    text-align: center;  
+    text-align: center;
 }
 
-nav ul li a { /* Links im Header*/
+nav ul li a {
+    /* Links im Header*/
     color: #0f6686;
     font-size: 1.2rem;
-    padding: 5px 10px; 
-    margin-right: 20px; 
+    padding: 5px 10px;
+    margin-right: 20px;
 }
 
-nav ul li a:hover, /*Links im Header*/
+nav ul li a:hover,
+/*Links im Header*/
 nav ul li a:focus {
-  color: #5acdf7; 
+    color: #5acdf7;
 }
 
-.search-bar { /*Suchleiste Design*/
-    width: 200px;              
-    padding: 5px 10px;        
-    border: 2px solid #03080c; 
-    border-radius: 15px;      
-    font-size: 16px;           
-    outline: none;    
-        }      
-   
+.search-bar {
+    /*Suchleiste Design*/
+    width: 200px;
+    padding: 5px 10px;
+    border: 2px solid #03080c;
+    border-radius: 15px;
+    font-size: 16px;
+    outline: none;
+}
+
 .search-bar:hover {
-    border-color: #1ca1d1;  
+    border-color: #1ca1d1;
 }
 
 .search-bar:focus {
-    border-color: #1abc9c;     
+    border-color: #1abc9c;
 }
 
 /* Zentrierung der Suchleiste */
@@ -64,15 +69,15 @@ form {
 
 /*Flexbox für das Menü*/
 .flex-container5 {
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     align-items: center;
     gap: 10px;
     padding: 10px 10px;
     background-color: #cbf4fe;
     margin: 0;
     margin-bottom: 80px;
-} 
+}
 
 .horizontal-menu {
     list-style-type: none;
@@ -81,17 +86,19 @@ form {
 }
 
 /* Listenelemente horizontal */
-.horizontal-menu li, li form {
+.horizontal-menu li,
+li form {
     display: inline-block;
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
 /*Seitenanfang*/
 .flex-container {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: start; 
-    background: linear-gradient(to bottom right , #c9dfe7, #1ca1d1);  /* Verlauf von hellblau nach mittelblau */
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    background: linear-gradient(to bottom right, #c9dfe7, #1ca1d1);
+    /* Verlauf von hellblau nach mittelblau */
     padding: 20px;
     margin: 0;
     box-sizing: border-box;
@@ -99,66 +106,67 @@ form {
 }
 
 .menu-item.active {
-    color: #000000; 
+    color: #000000;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px; 
-    line-height: 1.8; 
-    color: #333; 
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
     margin: 0;
     padding: 40px;
 }
 
 a {
     color: #2e5983;
-    padding: 5px 10px; 
-    margin-right: 20px; 
+    padding: 5px 10px;
+    margin-right: 20px;
 }
 
-a:hover, /*Links ändern die Farbe wenn die Maus darüber fährt*/
+a:hover,
+/*Links ändern die Farbe wenn die Maus darüber fährt*/
 a:focus {
-  color:  rgb(118, 181, 245);
+    color: rgb(118, 181, 245);
 }
- 
+
 .text {
     margin: 20px;
 }
 
 
 .container-weg {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
     margin-top: 30px;
     box-sizing: border-box;
-    gap: 20px; 
-    font-size: 19px; 
+    gap: 20px;
+    font-size: 19px;
     width: 100%
 }
 
-.item img{
+.item img {
     max-width: 350px;
     height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .item1 img {
-    max-width:550px;
+    max-width: 550px;
     max-height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .item2 img {
-    max-width:350px;
+    max-width: 350px;
     max-height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.zentrieren  {
+.zentrieren {
     text-align: center;
 }
 
@@ -170,15 +178,15 @@ a:focus {
 
 /*Flexbox für den Footer*/
 .flex-container6 {
-    display: flex; 
-    justify-content: flex-end; 
-    align-items: center; 
-    background: linear-gradient(to bottom , #e9f1f4, #59b2d2);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: linear-gradient(to bottom, #e9f1f4, #59b2d2);
     padding: 20px;
     margin-top: 30px;
     box-sizing: border-box;
     gap: 20px;
-    text-align: center;  
+    text-align: center;
 }
 
 .footer-link {
@@ -186,16 +194,17 @@ a:focus {
 }
 
 .footer-links {
-    list-style-type: none; 
+    list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 20px; 
+    gap: 20px;
 }
 
-.footer-link:hover, /*Links ändern die Farbe wenn die Maus darüber fährt*/
+.footer-link:hover,
+/*Links ändern die Farbe wenn die Maus darüber fährt*/
 .footer-link:focus {
-  color:  rgb(73, 111, 148);
+    color: rgb(73, 111, 148);
 }
 
 /* Hamburger Menü (Standardmäßig versteckt) */
@@ -216,7 +225,8 @@ a:focus {
 /* Menü auf kleineren Bildschirmen */
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* Versteckt das Menü */
+        display: none;
+        /* Versteckt das Menü */
         position: absolute;
         top: 60px;
         right: 0;
@@ -233,11 +243,13 @@ a:focus {
     }
 
     .hamburger {
-        display: flex; /* Zeigt das Hamburger-Icon */
+        display: flex;
+        /* Zeigt das Hamburger-Icon */
     }
 
     .nav-links.active {
-        display: flex; /* Zeigt das Menü bei Klick */
+        display: flex;
+        /* Zeigt das Menü bei Klick */
     }
 }
 
@@ -275,4 +287,3 @@ a:focus {
         width: 100%;
     }
 }
-

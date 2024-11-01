@@ -42,7 +42,8 @@ nav ul li a:focus {
     color: #5acdf7;
 }
 
-.search-bar { /*Suchleiste*/
+.search-bar {
+    /*Suchleiste*/
     width: 200px;
     padding: 5px 10px;
     border: 2px solid #03080c;
@@ -96,7 +97,8 @@ li form {
     display: flex;
     justify-content: space-between;
     align-items: start;
-    background: linear-gradient(to bottom right, #c9dfe7, #1ca1d1); /* Verlauf von hellblau nach mittelblau */
+    background: linear-gradient(to bottom right, #c9dfe7, #1ca1d1);
+    /* Verlauf von hellblau nach mittelblau */
     padding: 20px;
     margin: 0;
     box-sizing: border-box;
@@ -104,7 +106,7 @@ li form {
 }
 
 .menu-item.active {
-    color: #000000; 
+    color: #000000;
 }
 
 body {
