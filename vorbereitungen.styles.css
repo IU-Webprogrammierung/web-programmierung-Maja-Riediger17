@@ -27,7 +27,6 @@ p1 {
 /*Überschrift in Flexbox*/
 .container {
     text-align: center;
-    /* Zentriert den Text horizontal */
 }
 
 nav ul li a {
@@ -45,17 +44,11 @@ nav ul li a:focus {
 }
 
 .search-bar {
-    /*Suchleiste Design*/
     width: 200px;
-    /* Breite */
     padding: 5px 10px;
-    /* Abstand zwischen Text und Rand*/
     border: 2px solid #03080c;
-    /* Rahmenfarbe und -breite */
     border-radius: 15px;
-    /* Abgerundete Ecken */
     font-size: 16px;
-    /* Schriftgröße */
     outline: none;
 }
 
@@ -77,11 +70,8 @@ form {
 /*Flexbox für das Menü*/
 .flex-container5 {
     display: flex;
-    /* Flexbox aktivieren */
     justify-content: center;
-    /* Verteilung des Inhalts */
     align-items: center;
-    /* Vertikale Zentrierung */
     gap: 10px;
     padding: 10px 10px;
     background-color: #cbf4fe;
@@ -100,19 +90,14 @@ form {
 li form {
     display: inline-block;
     margin-right: 20px;
-    /* Abstand zwischen den Links */
 }
 
 /*Seitenanfang*/
 .flex-container {
     display: flex;
-    /* Flexbox aktivieren */
     justify-content: space-between;
-    /* Verteilung des Inhalts */
     align-items: start;
-    /* Vertikale Zentrierung */
     background: linear-gradient(to bottom right, #c9dfe7, #1ca1d1);
-    /* Verlauf von hellblau nach mittelblau */
     padding: 20px;
     margin: 0;
     box-sizing: border-box;
@@ -120,17 +105,14 @@ li form {
 }
 
 .menu-item.active {
-    color: #000000; /* Beispiel für eine andere Farbe */
+    color: #000000;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
-    /*Schriftgröße */
     line-height: 1.8;
-    /* Zeilenabstand */
     color: #333;
-    /* Textfarbe */
     margin: 0;
     padding: 40px;
 }
@@ -142,7 +124,6 @@ a {
 }
 
 a:hover,
-/*Links ändern die Farbe wenn die Maus darüber fährt*/
 a:focus {
     color: rgb(118, 181, 245);
 }
@@ -162,13 +143,9 @@ a:focus {
 
 .box {
     display: flex;
-    /* Aktiviert Flexbox */
     justify-content: space-between;
-    /* Verteilt die Boxen mit Abstand */
     gap: 30px;
-    /* Abstand zwischen den Boxen */
     padding: 10px;
-    /* Innenabstand innerhalb des Containers */
     width: 90%;
 }
 
@@ -176,50 +153,34 @@ a:focus {
 .box2,
 .box3 {
     background-color: lightblue;
-    /* Hintergrundfarbe der Flexbox */
     flex: 1;
-    /* Beide Flexboxen bekommen gleiche Breite */
     padding: 10px;
-    /* Innenabstand innerhalb der Flexboxen */
     text-align: center;
-    /* Text zentrieren */
     border-radius: 5px;
-    /* Runde Ecken */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Ein leichter Schatten für Tiefe */
     list-style-type: none;
 }
 
 .header-box {
     background-color: #cbf4fe;
-    /* Helles Blau als Hintergrund */
     padding: 8px;
-    /* Innenabstand um die Überschrift */
     text-align: center;
-    /* Überschrift mittig ausrichten */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Leichter Schatten */
     max-width: 400px;
-    /* Maximale Breite der Box */
     margin: 20px auto;
     margin-top: 50px;
-    /* Zentriert die Box auf der Seite */
 }
 
 .ueberschrift {
     font-family: 'Arial', sans-serif;
     font-size: 18px;
     color: black;
-    /* Gleiche Farbe wie der Rand */
     margin: 0;
-    /* Entfernt Standardabstand der Überschrift */
 }
 
 .scrollen {
     overflow-x: auto;
-    /* Ermöglicht horizontales Scrollen */
     -webkit-overflow-scrolling: touch;
-    /* Für mobiles Scrollen */
 }
 
 .training-plan {
@@ -229,87 +190,62 @@ a:focus {
     border-collapse: collapse;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
-    /* Dezenter Hintergrund */
     border: 1px solid #ddd;
-    /* Helle Umrandung */
     margin-top: 40px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    /* Vermeidet doppelte Ränder */
     min-width: 600px;
-    /* Mindestens benötigte Breite der Tabelle */
 }
 
 .training-plan thead th {
     background-color: #cbf4fe;
-    ;
-    /* Blauer Hintergrund für die Kopfzeile */
     color: rgb(0, 0, 0);
-    /* Weiße Schrift für die Kopfzeile */
     padding: 10px;
-    /* Innenabstand */
     text-align: center;
-    /* Zentriert die Überschrift */
     font-size: 18px;
-    /* Etwas größere Schrift */
 }
 
 .training-plan tbody td {
     padding: 15px;
-    /* Innenabstand zu den Zellen */
     border: 1px solid #ddd;
-    /* Dezente Linie zwischen den Zellen */
     vertical-align: top;
-    /* Ausrichtung am oberen Rand */
     background-color: #ffffff;
-    /* Heller Hintergrund für die Tabelle */
     font-size: 16px;
-    /* Angenehme Schriftgröße */
 }
 
 .training-plan h4 {
     margin: 0 0 10px 0;
-    /* Kein Abstand oben, 10px unten */
     font-size: 18px;
-    /* Überschrift etwas größer */
     color: #333;
-    /* Dunklere Schriftfarbe */
 }
 
 
 .training-plan ul li {
     margin: 5px 0;
-    /* Leichter Abstand zwischen den Listenelementen */
 }
 
 .training-plan tbody tr:nth-child(even) {
     background-color: #f0f8ff;
-    /* Leicht alternierende Zeilenfarbe */
 }
 
 .training-plan th,
 .training-plan td {
     width: 25%;
-    /* Jede Spalte nimmt 25% der Gesamtbreite der Tabelle ein */
 }
 
 .container-vorbereitung {
     display: flex;
-    /* Flexbox aktivieren */
     justify-content: space-between;
-    /* Verteilung des Inhalts */
     align-items: center;
-    /* Vertikale Zentrierung */
     padding-right: 25px;
     padding-left: 25px;
     margin-bottom: 30px;
     box-sizing: border-box;
     gap: 20px;
     font-size: 19px;
-    /*Schriftgröße */
     max-width: 100%
 }
 
@@ -325,13 +261,8 @@ table {
 /*Flexbox für den Footer*/
 .flex-container6 {
     display: flex;
-    /* Flexbox aktivieren */
     justify-content: flex-end;
-    /* Verteilung des Inhalts */
     align-items: center;
-    /* Vertikale Zentrierung */
-    height: 10vh;
-    /* Höhe des Viewports */
     background: linear-gradient(to bottom, #e9f1f4, #59b2d2);
     padding: 20px;
     margin-top: 30px;
@@ -346,9 +277,7 @@ table {
     padding: 0;
     margin: 0;
     display: flex;
-    /* Setzt die Links nebeneinander */
     gap: 20px;
-    /* Fügt optional Abstand zwischen den Links hinzu */
 }
 
 .footer-link {
@@ -356,7 +285,6 @@ table {
 }
 
 .footer-link:hover,
-/*Links ändern die Farbe wenn die Maus darüber fährt*/
 .footer-link:focus {
     color: rgb(73, 111, 148);
 }
@@ -380,7 +308,6 @@ table {
 @media (max-width: 768px) {
     .nav-links {
         display: none;
-        /* Versteckt das Menü */
         position: absolute;
         top: 60px;
         right: 0;

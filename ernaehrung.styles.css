@@ -26,7 +26,6 @@ p1 {
 /*Überschrift in Flexbox*/
 .container {
     text-align: center;
-    /* Zentriert den Text horizontal */
 }
 
 nav ul li a {
@@ -43,18 +42,12 @@ nav ul li a:focus {
     color: #5acdf7;
 }
 
-.search-bar {
-    /*Suchleiste Design*/
+.search-bar { /*Suchleiste*/
     width: 200px;
-    /* Breite */
     padding: 5px 10px;
-    /* Abstand zwischen Text und Rand*/
     border: 2px solid #03080c;
-    /* Rahmenfarbe und -breite */
     border-radius: 15px;
-    /* Abgerundete Ecken */
     font-size: 16px;
-    /* Schriftgröße */
     outline: none;
 }
 
@@ -76,11 +69,8 @@ form {
 /*Flexbox für das Menü*/
 .flex-container5 {
     display: flex;
-    /* Flexbox aktivieren */
     justify-content: center;
-    /* Verteilung des Inhalts */
     align-items: center;
-    /* Vertikale Zentrierung */
     gap: 10px;
     padding: 10px 10px;
     background-color: #cbf4fe;
@@ -99,19 +89,14 @@ form {
 li form {
     display: inline-block;
     margin-right: 20px;
-    /* Abstand zwischen den Links */
 }
 
 /*Seitenanfang*/
 .flex-container {
     display: flex;
-    /* Flexbox aktivieren */
     justify-content: space-between;
-    /* Verteilung des Inhalts */
     align-items: start;
-    /* Vertikale Zentrierung */
-    background: linear-gradient(to bottom right, #c9dfe7, #1ca1d1);
-    /* Verlauf von hellblau nach mittelblau */
+    background: linear-gradient(to bottom right, #c9dfe7, #1ca1d1); /* Verlauf von hellblau nach mittelblau */
     padding: 20px;
     margin: 0;
     box-sizing: border-box;
@@ -119,17 +104,14 @@ li form {
 }
 
 .menu-item.active {
-    color: #000000; /* Beispiel für eine andere Farbe */
+    color: #000000; 
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
-    /*Schriftgröße */
     line-height: 1.8;
-    /* Zeilenabstand */
     color: #333;
-    /* Textfarbe */
     margin: 0;
     padding: 40px;
 }
@@ -150,13 +132,9 @@ a:focus {
 
 .box {
     display: flex;
-    /* Aktiviert Flexbox */
     justify-content: space-between;
-    /* Verteilt die Boxen mit Abstand */
     gap: 30px;
-    /* Abstand zwischen den Boxen */
     padding: 10px;
-    /* Innenabstand innerhalb des Containers */
     width: 90%;
 }
 
@@ -164,17 +142,11 @@ a:focus {
 .box2,
 .box3 {
     background-color: lightblue;
-    /* Hintergrundfarbe der Flexbox */
     flex: 1;
-    /* Beide Flexboxen bekommen gleiche Breite */
     padding: 10px;
-    /* Innenabstand innerhalb der Flexboxen */
     text-align: center;
-    /* Text zentrieren */
     border-radius: 5px;
-    /* Runde Ecken */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Ein leichter Schatten für Tiefe */
     list-style-type: none;
 }
 
@@ -191,46 +163,34 @@ a:focus {
     max-width: 400px;
     max-height: 250px;
     border-radius: 10px;
-    /* Bilder mit abgerundeten Ecken */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
 .start {
     display: flex;
-    /* Flexbox aktivieren */
     justify-content: space-between;
-    /* Verteilung des Inhalts */
     align-items: center;
-    /* Vertikale Zentrierung */
     padding: 20px;
     margin: 0;
     box-sizing: border-box;
     gap: 20px;
     font-size: 19px;
-    /*Schriftgröße */
     width: 100%
 }
 
 .second-box {
     display: flex;
-    /* Aktiviert Flexbox */
     justify-content: space-between;
-    /* Verteilt die Boxen mit Abstand */
     gap: 20px;
-    /* Abstand zwischen den Boxen */
     padding: 10px;
     width: 90%;
-    /* Innenabstand innerhalb des Containers */
 }
 
 .break {
     width: 100%;
-    /* Blockelement füllt die gesamte Breite */
     height: 0;
-    /* Keine Höhe erforderlich, reiner Umbruch */
     clear: both;
-    /* Sicherstellen, dass nichts danebenfließt */
 }
 
 #bild16,
@@ -256,22 +216,18 @@ a:focus {
 
 .nutrition-table thead {
     background-color: lightblue;
-    /* Grüne Kopfzeile, passend zum Ernährungsdesign */
     color: black;
-    /* Weißer Text in der Kopfzeile */
 }
 
 .nutrition-table th,
 .nutrition-table td {
     padding: 12px 15px;
-    /* Polsterung für mehr Platz in den Zellen */
     border: 1px solid #dddddd;
-    /* Leichte Ränder für die Zellen */
 }
 
 .nutrition-table tbody tr:nth-child(even) {
     background-color: #f9f9f9;
-    /* Abwechselnde Hintergrundfarben für die Zeilen */
+    /* Abwechselnde Farben der Zeilen*/
 }
 
 .nutrition-table tbody tr:nth-child(odd) {
@@ -282,35 +238,25 @@ a:focus {
 .images-healthy {
     display: flex;
     flex-wrap: wrap;
-    /* Elemente werden in mehrere Zeilen umgebrochen */
     justify-content: space-around;
-    /* Bilder gleichmäßig horizontal verteilen */
     gap: 10px;
-    /* Abstand zwischen den Bildern */
 }
 
 .image-item {
     flex: 1 1 calc(50% - 20px);
-    /* Jedes Bild nimmt die Hälfte der Breite ein, mit Abstand */
     box-sizing: border-box;
-    /* Stellt sicher, dass der Abstand korrekt berechnet wird */
 }
 
 .image-item img {
     max-width: 400px;
-    /* Bilder füllen das Flex-Item komplett aus */
     max-height: auto;
-    /* Höhe passt sich proportional an */
     border-radius: 10px;
-    /* Bilder mit abgerundeten Ecken */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Leichter Schatten um die Bilder */
 }
 
 .outer-flexbox {
     display: flex;
     justify-content: space-around;
-    /* Elemente gleichmäßig verteilen */
     align-items: center;
     padding: 20px;
     gap: 30px;
@@ -322,13 +268,8 @@ a:focus {
 /*Flexbox für den Footer*/
 .flex-container6 {
     display: flex;
-    /* Flexbox aktivieren */
     justify-content: flex-end;
-    /* Verteilung des Inhalts */
     align-items: center;
-    /* Vertikale Zentrierung */
-    height: 10vh;
-    /* Höhe des Viewports */
     background: linear-gradient(to bottom, #e9f1f4, #59b2d2);
     padding: 20px;
     margin-top: 30px;
@@ -339,13 +280,10 @@ a:focus {
 
 .footer-links {
     list-style-type: none;
-    /* Entfernt Aufzählungszeichen */
     padding: 0;
     margin: 0;
     display: flex;
-    /* Setzt die Links nebeneinander */
     gap: 20px;
-    /* Fügt optional Abstand zwischen den Links hinzu */
 }
 
 .footer-link {
@@ -361,10 +299,8 @@ a:focus {
 .responsive-image {
     display: block;
     max-width: auto;
-    /* Verhindert, dass das Bild größer als der Container wird */
     max-height: 250px;
     margin: 0 auto;
-    /* Horizontales Zentrieren */
 }
 
 /* Hamburger Menü (Standardmäßig versteckt) */
@@ -386,7 +322,6 @@ a:focus {
 @media (max-width: 768px) {
     .nav-links {
         display: none;
-        /* Versteckt das Menü */
         position: absolute;
         top: 60px;
         right: 0;
@@ -448,7 +383,6 @@ a:focus {
         .responsive-image {
             display: block;
             max-width: 80%;
-            /* Bildgröße anpassen für kleinere Bildschirme */
             margin-left: auto;
             margin-right: auto;
         }

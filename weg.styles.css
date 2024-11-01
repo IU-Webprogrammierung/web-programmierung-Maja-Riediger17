@@ -23,7 +23,7 @@ p1 { /*Unterüberschrift*/
 
 /*Überschrift in Flexbox*/
 .container {
-    text-align: center;  /* Zentriert den Text horizontal */
+    text-align: center;  
 }
 
 nav ul li a { /* Links im Header*/
@@ -39,11 +39,11 @@ nav ul li a:focus {
 }
 
 .search-bar { /*Suchleiste Design*/
-    width: 200px;              /* Breite */
-    padding: 5px 10px;         /* Abstand zwischen Text und Rand*/
-    border: 2px solid #03080c; /* Rahmenfarbe und -breite */
-    border-radius: 15px;       /* Abgerundete Ecken */
-    font-size: 16px;           /* Schriftgröße */
+    width: 200px;              
+    padding: 5px 10px;        
+    border: 2px solid #03080c; 
+    border-radius: 15px;      
+    font-size: 16px;           
     outline: none;    
         }      
    
@@ -64,9 +64,9 @@ form {
 
 /*Flexbox für das Menü*/
 .flex-container5 {
-    display: flex; /* Flexbox aktivieren */
-    justify-content: center; /* Verteilung des Inhalts */
-    align-items: center; /* Vertikale Zentrierung */
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
     gap: 10px;
     padding: 10px 10px;
     background-color: #cbf4fe;
@@ -83,14 +83,14 @@ form {
 /* Listenelemente horizontal */
 .horizontal-menu li, li form {
     display: inline-block;
-    margin-right: 20px; /* Abstand zwischen den Links */
+    margin-right: 20px; 
 }
 
 /*Seitenanfang*/
 .flex-container {
-    display: flex; /* Flexbox aktivieren */
-    justify-content: space-between; /* Verteilung des Inhalts */
-    align-items: start; /* Vertikale Zentrierung */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: start; 
     background: linear-gradient(to bottom right , #c9dfe7, #1ca1d1);  /* Verlauf von hellblau nach mittelblau */
     padding: 20px;
     margin: 0;
@@ -99,14 +99,14 @@ form {
 }
 
 .menu-item.active {
-    color: #000000; /* Beispiel für eine andere Farbe */
+    color: #000000; 
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px; /*Schriftgröße */
-    line-height: 1.8; /* Zeilenabstand */
-    color: #333; /* Textfarbe */
+    font-size: 18px; 
+    line-height: 1.8; 
+    color: #333; 
     margin: 0;
     padding: 40px;
 }
@@ -128,14 +128,14 @@ a:focus {
 
 
 .container-weg {
-    display: flex; /* Flexbox aktivieren */
-    justify-content: space-between; /* Verteilung des Inhalts */
-    align-items: center; /* Vertikale Zentrierung */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
     padding: 20px;
     margin-top: 30px;
     box-sizing: border-box;
     gap: 20px; 
-    font-size: 19px; /*Schriftgröße */
+    font-size: 19px; 
     width: 100%
 }
 
@@ -170,10 +170,9 @@ a:focus {
 
 /*Flexbox für den Footer*/
 .flex-container6 {
-    display: flex; /* Flexbox aktivieren */
-    justify-content: flex-end; /* Verteilung des Inhalts */
-    align-items: center; /* Vertikale Zentrierung */
-    height: 10vh; /* Höhe des Viewports */
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
     background: linear-gradient(to bottom , #e9f1f4, #59b2d2);
     padding: 20px;
     margin-top: 30px;
@@ -187,11 +186,11 @@ a:focus {
 }
 
 .footer-links {
-    list-style-type: none; /* Entfernt Aufzählungszeichen */
+    list-style-type: none; 
     padding: 0;
     margin: 0;
-    display: flex; /* Setzt die Links nebeneinander */
-    gap: 20px; /* Fügt optional Abstand zwischen den Links hinzu */
+    display: flex;
+    gap: 20px; 
 }
 
 .footer-link:hover, /*Links ändern die Farbe wenn die Maus darüber fährt*/

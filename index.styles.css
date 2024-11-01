@@ -14,7 +14,7 @@ p1 { /*Unterüberschrift*/
 
 /*Überschrift in Flexbox*/
 .container {
-    text-align: center;  /* Zentriert den Text horizontal */
+    text-align: center;  
 }
 
 nav ul li a { /* Links im Header*/
@@ -30,11 +30,11 @@ nav ul li a:focus {
 }
 
 .search-bar { /*Suchleiste Design*/
-    width: 200px;              /* Breite */
-    padding: 5px 10px;         /* Abstand zwischen Text und Rand*/
-    border: 2px solid #03080c; /* Rahmenfarbe und -breite */
-    border-radius: 15px;       /* Abgerundete Ecken */
-    font-size: 16px;           /* Schriftgröße */
+    width: 200px;              
+    padding: 5px 10px;         
+    border: 2px solid #03080c; 
+    border-radius: 15px;       
+    font-size: 16px;           
     outline: none;    
         }      
    
@@ -46,7 +46,7 @@ nav ul li a:focus {
     border-color: #1abc9c;     
 }
 
-/* Zentrierung der Suchleiste */
+/* Zentrierung Suchleiste */
 form {
     display: flex;
     justify-content: right;
@@ -55,9 +55,9 @@ form {
 
 /*Flexbox für das Menü*/
 .flex-container5 {
-    display: flex; /* Flexbox aktivieren */
-    justify-content: center; /* Verteilung des Inhalts */
-    align-items: center; /* Vertikale Zentrierung */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     gap: 10px;
     padding: 10px 10px;
     background-color: #cbf4fe;
@@ -66,14 +66,14 @@ form {
 } 
 
 .menu-item.active {
-    color: #000000; /* Beispiel für eine andere Farbe */
+    color: #000000; /* Links andere Farbe bei Verwendung der Seite */
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px; /*Schriftgröße */
+    font-size: 18px; 
     line-height: 1.8; /* Zeilenabstand */
-    color: #333; /* Textfarbe */
+    color: #333; 
     margin: 0;
     padding: 40px;
     box-sizing:border-box;
@@ -85,7 +85,7 @@ a {
     margin-right: 20px; 
 }
 
-a:hover, /*Links ändern die Farbe wenn die Maus darüber fährt*/
+a:hover,
 a:focus {
   color:  rgb(118, 181, 245);
 }
@@ -122,26 +122,26 @@ article {
     }
 
     table {
-        width: 100%; /* Breite der Tabelle */
-        border-collapse: collapse; /* Abstände zwischen Zellen entfernt */
-        margin: 20px; /* Abstand um die Tabelle */
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Schatten für Tiefe */
-        overflow: hidden; /* Versteckt Überlauf */
+        width: 100%; 
+        border-collapse: collapse; 
+        margin: 20px; 
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Schatten */
+        overflow: hidden; /* Überlauf weg*/
     }
     
     /* Tabellenkopf Styling */
     th {
-        background-color: #3498db; /* Hintergrundfarbe für den Kopf */
-        color: white; /* Schriftfarbe Kopf */
-        padding: 12px; /* Innenabstand Kopfzellen */
-        text-align: left; /* Text linksbündig */
+        background-color: #3498db; 
+        color: white; 
+        padding: 12px; 
+        text-align: left; 
     }
     
     /* Tabellenzellen Styling */
     td {
-        background-color: #ffffff; /* Hintergrundfarbe */
-        padding: 10px; /* Innenabstand */
-        border-bottom: 1px solid #dddddd; /* Untere Grenze der Zellen */
+        background-color: #ffffff; 
+        padding: 10px; 
+        border-bottom: 1px solid #dddddd; 
     }
     
     /* Hover-Effekt für Zellen */
@@ -156,23 +156,23 @@ article {
 
 /*Listen formatierung */
 article ul, ol{
-    padding: 0; /* Entfernt Padding */
-    margin: 20px 0; /* Abstand um die Liste */
+    padding: 0; 
+    margin: 20px 0; 
 }
 
 
 article li {
-    background-color:  #ffffff; /* Hintergrundfarbe für die Listenelemente */
-    padding: 15px; /* Innenabstand */
-    margin-bottom: 10px; /* Abstand zwischen den Listenelementen */
-    border-radius: 5px; /* Abgerundete Ecken */
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Schatten für Tiefe */
-    transition: background-color 0.3s; /* Sanfter Übergang für Hover */
+    background-color:  #ffffff; 
+    padding: 15px; 
+    margin-bottom: 10px;
+    border-radius: 5px; 
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s; 
 }
 
 /* Hover-Effekt für Listenelemente */
 article li:hover {
-    background-color: #e7f3fe; /* Hintergrundfarbe beim Hover */
+    background-color: #e7f3fe; 
 }
 
 .horizontal-menu {
@@ -184,14 +184,14 @@ article li:hover {
 /* Listenelemente horizontal */
 .horizontal-menu li, li form {
     display: inline-block;
-    margin-right: 20px; /* Abstand zwischen den Links */
+    margin-right: 20px; 
 }
 
 /*Seitenanfang*/
 .flex-container {
-    display: flex; /* Flexbox aktivieren */
-    justify-content: space-between; /* Verteilung des Inhalts */
-    align-items: start; /* Vertikale Zentrierung */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: start; 
     background: linear-gradient(to bottom right , #c9dfe7, #1ca1d1);  /* Verlauf von hellblau nach mittelblau */
     padding: 20px;
     margin:0;
@@ -202,36 +202,36 @@ article li:hover {
 
 /*Flexbox für "Was ist Hyrox"*/
 .flex-container1 {
-    display: flex; /* Flexbox aktivieren */
-    justify-content: space-between; /* Verteilung des Inhalts */
-    align-items: center; /* Vertikale Zentrierung */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
     padding: 20px;
     margin-top: 30px;
     box-sizing: border-box;
     gap: 20px; 
-    font-size: 19px; /*Schriftgröße */
+    font-size: 19px;
     max-width: 100%;
 }
 
 
 /*Flexbox für "Wie kam ich zum Hyrox"*/
 .flex-container2 {
-    display: flex; /* Flexbox aktivieren */
-    justify-content: space-between; /* Verteilung des Inhalts */
-    align-items: center; /* Vertikale Zentrierung */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
     padding: 20px;
     margin-top: 5px;
     box-sizing: border-box;
     gap: 20px; 
-    font-size: 19px; /*Schriftgröße */
+    font-size: 19px; 
     max-width: 100%;
 }
 
 /* Flexbox für die Tabellen und anschließende Formatierung*/
 .flex-container3 {
-    display: flex; /* Flexbox aktivieren */
-    justify-content: center; /* Verteilung des Inhalts */
-    align-items: center; /* Vertikale Zentrierung */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     background: linear-gradient(to bottom right , #e9f1f4, #59b2d2);
     border-radius: 15px; 
     padding: 5px 10px 5px 10px;
@@ -244,33 +244,33 @@ article li:hover {
 }
 
 .table {
-    max-width: 500px;                  /* Festgelegte Breite für beide Tabellen */
-    max-height: 200px;                 /* Festgelegte Höhe für beide Tabellen */
-    border-collapse: collapse;     /* Entfernt die Abstände zwischen den Tabellenzellen */
-    border: 1px solid #ccc;        /* Optional: Rahmen für die Tabellen */
+    max-width: 500px;                 
+    max-height: 200px;  
+    border-collapse: collapse;               
+    border: 1px solid #ccc;       
     table-layout: fixed;               
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);         /* Sorgt dafür, dass die Breite der Tabellenzellen gleich bleibt */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);        
 }
 
 .table th, .table td {
-    border: 1px solid #ccc;        /* Rahmen um Zellen */
-    padding: 10px;                 /* Innenabstand in den Zellen */
-    text-align: left;              /* Text linksbündig ausrichten */
+    border: 1px solid #ccc;      
+    padding: 10px;               
+    text-align: left;          
 }
 
 .table {
-    overflow: hidden;              /* Verhindert, dass die Tabelle den festgelegten Bereich verlässt */
+    overflow: hidden;            
 }
 
 tbody td:first-child {
-    font-weight: bold;         /* Erste Spalte fett formatieren */
+    font-weight: bold;        
 }
 
 /*Flexbox für den Footer*/
 .flex-container6 {
-    display: flex; /* Flexbox aktivieren */
-    justify-content: flex-end; /* Verteilung des Inhalts */
-    align-items: center; /* Vertikale Zentrierung */
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center; 
     background: linear-gradient(to bottom , #e9f1f4, #59b2d2);
     padding: 20px;
     margin-top: 30px;
@@ -287,11 +287,11 @@ tbody td:first-child {
     list-style-type: none; /* Entfernt Aufzählungszeichen */
     padding: 0;
     margin: 0;
-    display: flex; /* Setzt die Links nebeneinander */
-    gap: 20px; /* Fügt optional Abstand zwischen den Links hinzu */
+    display: flex; 
+    gap: 20px; 
 }
 
-.footer-link:hover, /*Links ändern die Farbe wenn die Maus darüber fährt*/
+.footer-link:hover, 
 .footer-link:focus {
   color:  rgb(73, 111, 148);
 }
@@ -311,8 +311,8 @@ tbody td:first-child {
     }
 
     .flex-container1, .flex-container2, .flex-container3, .flex-container4 {
-        flex-direction: column; /* Stapelt die Elemente untereinander */
-        height: auto; /* Höhe automatisch */
+        flex-direction: column; 
+        height: auto; 
     }
 
     .flex-container5 ul li {
@@ -342,7 +342,7 @@ tbody td:first-child {
     }
 }
 
-/* Hamburger Menü (Standardmäßig versteckt) */
+/* Hamburger Menü*/
 .hamburger {
     display: none;
     flex-direction: column;
@@ -360,7 +360,7 @@ tbody td:first-child {
 /* Menü auf allen Ipad Bildschirmen */
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* Versteckt das Menü */
+        display: none; 
         position: absolute;
         top: 60px;
         right: 0;
