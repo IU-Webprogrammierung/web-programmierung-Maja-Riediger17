@@ -9,7 +9,7 @@
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-/*Ende Slideshow*/
+
 
 
 /*slide in Content*/
@@ -101,6 +101,7 @@ article li:hover {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    padding-top: 0;
     box-sizing: border-box;
     margin: 0;
     gap: 20px;
@@ -115,6 +116,7 @@ article li:hover {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    padding-top: 0;
     box-sizing: border-box;
     margin:0;
     gap: 20px;
@@ -179,10 +181,6 @@ tbody td:first-child {
         margin-bottom: 10px;
     }
 }
-
-
-
-
 
 /* Animation für sanftes Ein- und Ausblenden */
 .fade {

@@ -1,44 +1,16 @@
-// Auswahl der Elemente
+
+
+// Elemente auswählen
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
 
-// Toggle Funktion, um das Menü anzuzeigen/verstecken
+// Klick-Event für das Hamburger-Menü
 hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('open');
+    const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+    hamburger.setAttribute('aria-expanded', !isExpanded);
 });
-
-
-hamburger.addEventListener('click', function() {
-    console.log("Hamburger Menü wurde geklickt");
-    navLinks.classList.toggle('show');
-});
-
-
-//Slida-Show Header
-let slideIndex = 0;
-
-function showSlides() {
-    const slides = document.querySelectorAll('.slide');
-    
-    // Alle Slides ausblenden
-    slides.forEach(slide => slide.style.display = 'none');
-    
-    slideIndex++;
-    if (slideIndex > slides.length) {
-        slideIndex = 1;
-    }
-    
-    // Aktuelle Slide anzeigen
-    slides[slideIndex - 1].style.display = 'block';
-    
-    // Nächste Slide nach 3 Sekunden anzeigen
-    setTimeout(showSlides, 3000);
-}
-
-// Slideshow beim Laden der Seite starten
-document.addEventListener('DOMContentLoaded', showSlides);
-
-
 
 
 // Slide In des Contents beim nach unten Scrollen 
