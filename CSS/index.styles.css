@@ -140,6 +140,22 @@ a:focus {
     font-style: italic;
 }
 
+.content {
+    opacity: 0; /* Unsichtbar, bis sie sichtbar wird */
+    transform: translateY(20px); /* Leicht nach unten verschoben */
+    transition: all 1.0s ease-out;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+/* Klasse, die beim Scrollen hinzugefügt wird */
+.content.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 /*Flexbox für den Footer*/
 .flex-container6 {
