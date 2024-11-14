@@ -253,7 +253,7 @@ a:focus {
 }
 
 /* Dropdown-Menü für Mobilgeräte */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
         .nav-links {
             display: none;
             flex-direction: column;
