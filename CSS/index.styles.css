@@ -115,7 +115,6 @@ body {
     line-height: 1.8;
     color: #333;
     margin: 0;
-    padding: 40px;
 }
 
 a {
@@ -253,13 +252,13 @@ a:focus {
 }
 
 /* Dropdown-Menü für Mobilgeräte */
-@media (max-width: 800px) {
+@media (max-width: 786px) {
         .nav-links {
             display: none;
             flex-direction: column;
             position: absolute;
-            top: 40px;
-            left: 40px;
+            top: 3px;
+            left: 3px;
             background-color: #d7f1fa;
             border-radius: 8px;
             width: 220px;
@@ -278,6 +277,7 @@ a:focus {
 
     .nav-links li:last-child {
         border-bottom: none;
+        margin-bottom: 10px;
     }
 
     .nav-links li a:hover {
