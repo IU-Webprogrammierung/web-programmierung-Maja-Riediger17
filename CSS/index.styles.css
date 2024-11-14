@@ -194,6 +194,7 @@ a:focus {
     border-radius: 2px;
 }
 
+
 /* Menü auf kleineren Bildschirmen */
 @media (max-width: 768px) {
     .nav-links {
