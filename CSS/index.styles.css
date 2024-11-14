@@ -130,11 +130,6 @@ a:focus {
     color: rgb(118, 181, 245);
 }
 
-
-.zentrieren {
-    text-align: center;
-}
-
 .fett {
     font-weight: 500;
     font-style: italic;
