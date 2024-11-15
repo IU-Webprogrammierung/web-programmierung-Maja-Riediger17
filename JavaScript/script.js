@@ -38,3 +38,33 @@ function scrollAnimation() {
 
 // Funktion beim Laden der Seite ausführen
 document.addEventListener('DOMContentLoaded', scrollAnimation);
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Funktion zur Initialisierung der Slideshow
+    function startSlideshow(slideshowContainer, interval) {
+        const slides = slideshowContainer.querySelectorAll(".slideshow-image");
+        let index = 0;
+
+        function showSlides() {
+            // Alle Bilder ausblenden
+            slides.forEach((slide) => slide.classList.remove('active'));
+            
+            // Nächstes Bild anzeigen
+            slides[index].classList.add('active');
+
+            // Index für das nächste Bild inkrementieren
+            index = (index + 1) % slides.length;
+        }
+
+        // Zeige das erste Bild an und starte die Slideshow
+        showSlides();
+        setInterval(showSlides, interval);
+    }
+
+    // Alle Slideshows initialisieren
+    document.querySelectorAll(".slideshow-container").forEach(slideshow => {
+        startSlideshow(slideshow, 2500); // Wechsle alle 3 Sekunden
+    });
+});
