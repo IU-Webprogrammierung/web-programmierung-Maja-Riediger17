@@ -196,10 +196,16 @@ tbody td:first-child {
 
     .table {
         font-size: 0.4rem;
-    }   }
+    }   
 
     .table th, .table td {
         padding: 5px;
+    }
+    .dark-mode-button {
+        position: absolute;
+        top: 270px;
+        right: 40px;
+    }
 }
 
 /* Animation für sanftes Ein- und Ausblenden */
