@@ -34,7 +34,6 @@ article {
     font-size: 18px;
     line-height: 1.8;
     margin: 0;
-    padding: 40px;
 }
 
 table {
@@ -112,6 +111,7 @@ article li:hover {
 /*Flexbox für "Wie kam ich zum Hyrox"*/
 .flex-container2 {
     display: flex;
+    flex-direction:row-reverse;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
@@ -138,8 +138,8 @@ article li:hover {
 }
 
 .table {
-    max-width: 500px;
-    max-height: 200px;
+    max-width: 95%;
+    max-height: auto;
     border-collapse: collapse;
     border: 1px solid #ccc;
     table-layout: fixed;
@@ -178,6 +178,28 @@ tbody td:first-child {
         display: block;
         margin-bottom: 10px;
     }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1rem;
+    }
+
+    p, a, ol, ul {
+        font-size: 0.6rem;
+    }
+
+    #bild2, #bild4 {
+        max-height: 50%;
+        height: auto;
+    }
+
+    .table {
+        font-size: 0.4rem;
+    }   }
+
+    .table th, .table td {
+        padding: 5px;
 }
 
 /* Animation für sanftes Ein- und Ausblenden */
