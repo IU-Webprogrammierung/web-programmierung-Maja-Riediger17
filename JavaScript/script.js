@@ -1,5 +1,5 @@
 
-
+//HAMBURGERMENÜ
 // Elemente auswählen
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
@@ -12,7 +12,7 @@ hamburger.addEventListener('click', () => {
     hamburger.setAttribute('aria-expanded', !isExpanded);
 });
 
-
+//SLIDE IN DES CONTENTS
 // Slide In des Contents beim nach unten Scrollen 
 
 // Funktion beim Laden der Seite ausführen
@@ -40,7 +40,7 @@ function scrollAnimation() {
 document.addEventListener('DOMContentLoaded', scrollAnimation);
 
 
-
+//SLIDESHOW
 document.addEventListener("DOMContentLoaded", function() {
     // Funktion zur Initialisierung der Slideshow
     function startSlideshow(slideshowContainer, interval) {
@@ -66,5 +66,27 @@ document.addEventListener("DOMContentLoaded", function() {
     // Alle Slideshows initialisieren
     document.querySelectorAll(".slideshow-container").forEach(slideshow => {
         startSlideshow(slideshow, 2500); // Wechsle alle 3 Sekunden
+    });
+});
+
+//DARKMODE
+document.addEventListener("DOMContentLoaded", function () {
+    const darkModeToggle = document.getElementById("darkModeToggle");
+    const body = document.body;
+
+    // Prüfen, ob der Dark Mode bereits aktiviert ist (im Local Storage)
+    if (localStorage.getItem("darkMode") === "enabled") {
+        body.classList.add("dark-mode");
+    }
+
+    // Dark Mode umschalten und im Local Storage speichern  
+    darkModeToggle.addEventListener("click", function () {
+        body.classList.toggle("dark-mode");
+
+        if (body.classList.contains("dark-mode")) {
+            localStorage.setItem("darkMode", "enabled");
+        } else {
+            localStorage.setItem("darkMode", "disabled");
+        }
     });
 });

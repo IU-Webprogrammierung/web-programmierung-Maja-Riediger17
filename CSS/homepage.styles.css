@@ -33,7 +33,6 @@ article {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 1.8;
-    color: #333;
     margin: 0;
     padding: 40px;
 }
@@ -130,7 +129,6 @@ article li:hover {
     justify-content: center;
     align-items: center;
     background: linear-gradient(to bottom right, #e9f1f4, #59b2d2);
-    border-radius: 15px;
     padding: 5px 10px 5px 10px;
     box-sizing: border-box;
     gap: 20px;

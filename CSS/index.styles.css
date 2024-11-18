@@ -226,13 +226,14 @@ a:focus {
 }
 
 .footer-link {
-    color: #03080c;
+    color: #0f6686;
+    text-decoration: none;
 }
 
 .footer-link:hover,
 /*Links ändern die Farbe wenn die Maus darüber fährt*/
 .footer-link:focus {
-    color: rgb(73, 111, 148);
+    color: rgb(115, 161, 206);
 }
 
 .responsive-image {
@@ -302,6 +303,47 @@ a:focus {
     padding: 5px;
     border: none;
     border-radius: 4px;
+}
+
+/*DARKMODE*/
+/* Grundlegendes Styling für den Dark Mode */ 
+
+body.dark-mode {
+    background-color: #2b2d2f;
+    color: #ffffff;
+}
+
+/* Styling für den Dark Mode Button */
+.dark-mode-button {
+    position: absolute;
+    top: 345px;
+    right: 40px;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.dark-mode-button:hover {
+    background-color: #e0e0e0;
+}
+
+body.dark-mode .dark-mode-button {
+    background-color: #444;
+    color: #f0f0f0;
+}
+
+@media (prefers-color-scheme: dark) {
+    /* Spezifische Klasse für dunklen Text im Dark Mode */
+    .darkmode-text-dark {
+        color: #000000; /* Setze den Text auf schwarz nur im Dark Mode */
+    }
+    .darkmode-link-dark {
+        color:#488dd2;
+    }
 }
 
 /* Dropdown-Menü für Mobilgeräte */
