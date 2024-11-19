@@ -90,3 +90,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+// Dark Mode Umschalten
+document.getElementById('toggle-dark-mode').addEventListener('click', function() {
+    document.body.classList.toggle('darkmode-text-dark');
+});

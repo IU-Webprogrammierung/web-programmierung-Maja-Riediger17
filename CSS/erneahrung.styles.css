@@ -132,6 +132,42 @@ h2 {
     margin: 0 auto;
 }
 
+@media (max-width: 450px) {
+    .nutrition-table {
+        font-size: 0.8rem; /* Smaller font size */
+    }
+
+    .nutrition-table th, 
+    .nutrition-table td {
+        padding: 5px; /* Reduce padding */
+    }
+
+    /* Optional: Card layout for extreme small screens */
+    .nutrition-table, 
+    .nutrition-table tbody, 
+    .nutrition-table tr {
+        display: block;
+    }
+
+    .nutrition-table th {
+        display: none;
+    }
+
+    .nutrition-table td {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+    }
+
+    .nutrition-table td::before {
+        content: attr(data-label); /* Label from data-label attribute */
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
 @media (max-width: 768px) {
     h2 {
         font-size: 1rem;
@@ -188,9 +224,12 @@ h2 {
     #bild16, #bild17, #bild18, #bild19 {
         max-width: 60%; 
      }
-     
+
     .images-healthy img{
         max-width: 90%;
+    }
+    .ausrichtung {
+        margin-left: 10px;
     }
  }
 
